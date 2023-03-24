@@ -37,9 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Script/PlayerMovement.cs" />
-     <Compile Include="Assets/Script/DialogueManager.cs" />
-     <Compile Include="Assets/Script/Dialogue.cs" />
      <Compile Include="Assets/Script/DialogueTrigger.cs" />
+     <Compile Include="Assets/Script/Dialogue.cs" />
+     <Compile Include="Assets/Script/DialogueManager.cs" />
+     <Compile Include="Assets/Script/CollidableObject.cs" />
+     <Compile Include="Assets/Script/InteractableObject.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

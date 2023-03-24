@@ -21,15 +21,24 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown("space"))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
+        FindObjectOfType<PlayerMovement>().enabled = false;
+        FindObjectOfType<InteractableObject>().z_Interacted = true;
         animator.SetBool("IsOpen", true);
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
 
         
@@ -37,18 +46,16 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (Input.GetKey("space"))
+        Debug.Log("Display next");
+        if (sentences.Count == 0)
         {
-            if (sentences.Count == 0)
-            {
-                EndDialogue();
-                return;
-            }
+            EndDialogue();
+            return;
+        }
 
-            string sentence = sentences.Dequeue();
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
-        }    
+        string sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));  
     }
     IEnumerator TypeSentence(string sentence)
     {
@@ -61,6 +68,7 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
+        FindObjectOfType<InteractableObject>().z_Interacted = false;
         Debug.Log("End reading");
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().enabled = true;
