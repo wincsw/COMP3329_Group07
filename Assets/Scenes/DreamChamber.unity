@@ -594,11 +594,25 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - There's a book on the desk
+    - There's a book on the desk.
     - '"Proper Hygiene for Dummies
 
-      -------------Concerned Citizen"'
-    - '"You should...."'
+      -----------------------Peter Piddington"'
+    - '"Inside everyone''s body, there exists a meter..."'
+    - '"And when that meter fills up, it signals the time to relieve ourselves.
+
+      Such
+      meter is called the Peedometer..."'
+    - '"However, as a civilized member of the society, the call of nature shall only
+      be answered in proper places..."'
+    - '"One such place is the TOILET, which may require a KEY to enter... "'
+    - '"To avoid messy situations, you should always use a PLUNGER to unclog  before
+      emptying yourself..."'
+    - "\"Use TOILET PAPER. As the saying goes, \n'If you don't wipe, you'll leave
+      stripes' ...\""
+    - '"Wash your hands with SOAP, and the viruses lose hope..."'
+    - ......
+    - 'The other 300 pages are all full of rhymes like this. '
 --- !u!114 &446558011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,6 +1136,9 @@ GameObject:
   - component: {fileID: 601804209}
   - component: {fileID: 601804208}
   - component: {fileID: 601804210}
+  - component: {fileID: 601804213}
+  - component: {fileID: 601804212}
+  - component: {fileID: 601804211}
   m_Layer: 0
   m_Name: WhiteBoard
   m_TagString: Untagged
@@ -1206,6 +1223,32 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.52, y: 2.2}
+    newSize: {x: 5.52, y: 2.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.52, y: 2.2}
+  m_EdgeRadius: 0
+--- !u!61 &601804211
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601804207}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1222,6 +1265,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.52, y: 2.2}
   m_EdgeRadius: 0
+--- !u!114 &601804212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601804207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "\"Use WASD to move\n     SPACE to interact\n     ESC to access menu\""
+    - Hmm... Wonder what this is for.
+--- !u!114 &601804213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601804207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d5268b6d86140fbba6cf59332973c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRange: 0
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 601804212}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  inCoolDown: 0
 --- !u!1001 &661291758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2649,12 +2738,12 @@ MonoBehaviour:
       In my defense, I tried ~really hard~ to wake you up!"'
     - '"But don''t worry! As long as you didn''t oversleep, you could still get out
       of here! And I''ll give you back your card tmr :D"'
-    - '"------ Love,
+    - '"---------------Love,
 
-      --------Richard
+      ----------------Suki Dadelu
 
-      P.S. maybe not your printing units
-      tho :< "'
+      P.S. maybe
+      not your printing units tho :< "'
     - ......
     - You realized your student card is not with you.
 --- !u!114 &2101107073
