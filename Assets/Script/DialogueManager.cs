@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space"))
+        if(!FindObjectOfType<PlayerMovement>().enabled && Input.GetKeyDown("space"))
         {
             DisplayNextSentence();
         }
@@ -32,7 +32,6 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         FindObjectOfType<PlayerMovement>().enabled = false;
-        FindObjectOfType<InteractableObject>().z_Interacted = true;
         animator.SetBool("IsOpen", true);
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
@@ -40,8 +39,6 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
         DisplayNextSentence();
-
-        
     }
 
     public void DisplayNextSentence()
@@ -68,7 +65,6 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
-        FindObjectOfType<InteractableObject>().z_Interacted = false;
         Debug.Log("End reading");
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().enabled = true;
