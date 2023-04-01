@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 371390335}
+    - target: {fileID: 3223316691524741736, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1975656467
+      objectReference: {fileID: 0}
     - target: {fileID: 3223316691524741739, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_Name
       value: UICanvas
@@ -1209,6 +1213,12 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   animator: {fileID: 0}
+  playerAnimator: {fileID: 0}
+--- !u!95 &778681137 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
+  m_PrefabInstance: {fileID: 451742397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &794539745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,6 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523315109}
   - component: {fileID: 1523315110}
+  - component: {fileID: 1523315111}
   m_Layer: 0
   m_Name: TopCubicleRightWallZ
   m_TagString: Untagged
@@ -1736,6 +1747,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1523315111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523315108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.08, y: 0.62}
+    newSize: {x: 0.08, y: 0.62}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.08, y: 0.62}
+  m_EdgeRadius: 0
 --- !u!1 &1568932908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,11 +1903,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1713946006}
   - component: {fileID: 1713946011}
+  - component: {fileID: 1713946007}
   - component: {fileID: 1713946010}
   - component: {fileID: 1713946009}
   - component: {fileID: 1713946008}
-  - component: {fileID: 1713946007}
   - component: {fileID: 1713946012}
+  - component: {fileID: 1713946013}
   m_Layer: 0
   m_Name: i-ToiletDoor
   m_TagString: Untagged
@@ -1904,9 +1942,9 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.4, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 1, y: 0}
@@ -1917,7 +1955,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.18, y: 1.18}
+  m_Size: {x: 0.8, y: 1.18}
   m_EdgeRadius: 0
 --- !u!114 &1713946008
 MonoBehaviour:
@@ -1934,9 +1972,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Wait!! I need to have ALL the \nKEY, TOILET PAPER, PLUNGER, and SOAP\nto go
-      to the toilet"
-    - Let me collect all of them first (can't be a nasty person)
+    - 'Wait!! I need to have ALL the KEY, TOILET PAPER, PLUNGER, and SOAP to go to
+      the toilet
+
+      Can''t be an unhygienic person'
 --- !u!114 &1713946009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1965,6 +2004,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1713946013}
+        m_TargetAssemblyTypeName: ToiletDoorTrigger, Assembly-CSharp
+        m_MethodName: TriggerToiletDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inCoolDown: 0
 --- !u!61 &1713946010
 BoxCollider2D:
@@ -1979,7 +2030,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.4, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 1, y: 0}
@@ -1990,7 +2041,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.18, y: 1.18}
+  m_Size: {x: 0.8, y: 1.18}
   m_EdgeRadius: 0
 --- !u!212 &1713946011
 SpriteRenderer:
@@ -2064,6 +2115,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1713946013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713946005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271aa0ea4a0299544ad5998fd2b01896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1713946012}
+  key: 1
+  plunger: 1
+  toiletPaper: 1
+  soap: 1
+  boxCollider: {fileID: 1713946007}
 --- !u!1001 &1724454875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2079,6 +2148,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 596719285}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 778681137}
     - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -2452,7 +2525,7 @@ Transform:
   m_GameObject: {fileID: 2116631741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.36, y: 1.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1568932909}
