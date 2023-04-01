@@ -2070,6 +2070,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.58, y: 2.18}
   m_EdgeRadius: 0
+--- !u!95 &1222415077 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
+  m_PrefabInstance: {fileID: 1838107265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1263932856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2085,6 +2090,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 661291760}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1222415077}
     - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
       propertyPath: m_Name
       value: DialogueManager
