@@ -29,16 +29,16 @@ public class ToiletDoorTrigger : MonoBehaviour
             {
                 animator.Play("ToiletDoor_Open");
                 close = false;
-                boxCollider.size = new Vector2(0.16f, 1.18f);
-                boxCollider.offset = new Vector2(-0.08f, 0.6f);
+                boxCollider.size = new Vector2(0.3f, 1.18f);
+                boxCollider.offset = new Vector2(-0.25f, 0.6f);
                 return;
             }
             else
             {
                 animator.Play("ToiletDoor_Close");
                 close = true;
-                boxCollider.size = new Vector2(0.8f, 1.18f);
-                boxCollider.offset = new Vector2(-0.4f, 0f);
+                boxCollider.size = new Vector2(0.8f, 0.8f);
+                boxCollider.offset = new Vector2(-0.4f, -0.24f);
                 return;
             }
 
