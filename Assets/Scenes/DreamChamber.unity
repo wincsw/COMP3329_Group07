@@ -808,6 +808,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3223316691483739469, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223316691483739469, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -821,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 500393103}
     - target: {fileID: 3223316691524741736, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3223316691524741736, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_SortingLayerID
@@ -1397,15 +1401,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3754946265726215952, guid: c7af6ca7293af4df8a4c1318ef796fe4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 130
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3754946265726215952, guid: c7af6ca7293af4df8a4c1318ef796fe4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 130
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3754946265726215952, guid: c7af6ca7293af4df8a4c1318ef796fe4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 130
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3754946265726215952, guid: c7af6ca7293af4df8a4c1318ef796fe4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2139,6 +2143,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.58, y: 2.18}
   m_EdgeRadius: 0
+--- !u!95 &1222415077 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
+  m_PrefabInstance: {fileID: 1838107265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1263932856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2154,6 +2163,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 661291760}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1222415077}
     - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
       propertyPath: m_Name
       value: DialogueManager

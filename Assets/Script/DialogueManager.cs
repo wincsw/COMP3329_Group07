@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
 
     public Animator animator;
+    public Animator playerAnimator;
 
     private Queue<string> sentences;
 
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        playerAnimator.SetFloat("Speed", 0f);
         FindObjectOfType<PlayerMovement>().enabled = false;
         animator.SetBool("IsOpen", true);
         sentences.Clear();
