@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    private Slider slider;
+    public Slider slider;
 
-    public float fillSpeed = 0.5e-8f;
+    public float fillSpeed;
     private float targetProgress = 0;
     
     private void Awake()
@@ -26,7 +26,11 @@ public class ProgressBar : MonoBehaviour
     {
         if (slider.value < targetProgress)
         {
-            slider.value += fillSpeed * Time.deltaTime / 60;
+            slider.value += fillSpeed * Time.deltaTime;
+        }
+        if (slider.value == 1)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
