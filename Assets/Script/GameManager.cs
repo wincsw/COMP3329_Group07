@@ -5,12 +5,20 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameState State;
 
     void Awake()
     {
         Instance = this;
 
     }
+
+    public void UpdateGameState(GameState newState)
+    {
+        State = newState;
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,4 +30,18 @@ public class GameManager : MonoBehaviour
     {
 
     }
+
+}
+
+public enum GameState
+{
+    KeyCollect,
+    PlungerCollect,
+    SoapCollect,
+    ToiletPaperCollect,
+    KeyCardCollect,
+    PlayLoc_Corridor
+
+
+
 }

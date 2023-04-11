@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 3658987594549523495}
   - component: {fileID: 3658987594549523480}
   - component: {fileID: 3658987594549523481}
+  - component: {fileID: 2427623405799187746}
   m_Layer: 0
   m_Name: plungerSmall
   m_TagString: Untagged
@@ -187,7 +188,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
-  collected: 0
+  itemName: Plunger
+--- !u!114 &2427623405799187746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658987594549523494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ea089decb860e4a9da342157cfe238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
+  itemName: Plunger
 --- !u!1 &3658987594662231058
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +214,7 @@ GameObject:
   - component: {fileID: 3658987594662231059}
   - component: {fileID: 3658987594662231060}
   - component: {fileID: 3658987594662231061}
+  - component: {fileID: 5561843627557814283}
   m_Layer: 0
   m_Name: keySmall
   m_TagString: Untagged
@@ -280,13 +296,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3658987594662231058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2458c267c92c64caa2a819fe533b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
-  collected: 0
+  itemName: Key
+--- !u!114 &5561843627557814283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658987594662231058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5da52307bbb39541b3290c2cd9aacdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
+  itemName: Key
 --- !u!1 &3658987594749217502
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +328,7 @@ GameObject:
   - component: {fileID: 3658987594749217503}
   - component: {fileID: 3658987594749217488}
   - component: {fileID: 3658987594749217489}
+  - component: {fileID: 962796019636108567}
   m_Layer: 0
   m_Name: toiletPaperSmall
   m_TagString: Untagged
@@ -385,7 +416,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
-  collected: 0
+  itemName: ToiletPaper
+--- !u!114 &962796019636108567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658987594749217502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f3e09c1650a7c439591f829692d4f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
+  itemName: ToiletPaper
 --- !u!1 &3658987594795904105
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +442,7 @@ GameObject:
   - component: {fileID: 3658987594795904106}
   - component: {fileID: 3658987594795904108}
   - component: {fileID: 3658987594795904107}
+  - component: {fileID: 6464187393490248970}
   m_Layer: 0
   m_Name: keycard
   m_TagString: Untagged
@@ -484,7 +530,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
-  collected: 0
+  itemName: Keycard
+--- !u!114 &6464187393490248970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658987594795904105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7216baf4a72e642a562a6cd0f6336a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
+  itemName: Keycard
 --- !u!1 &3658987595522989681
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +556,7 @@ GameObject:
   - component: {fileID: 3658987595522989682}
   - component: {fileID: 3658987595522989683}
   - component: {fileID: 3658987595522989684}
+  - component: {fileID: 3421804204549004312}
   m_Layer: 0
   m_Name: Soap
   m_TagString: Untagged
@@ -583,4 +644,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
-  collected: 0
+  itemName: Soap
+--- !u!114 &3421804204549004312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658987595522989681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0398a3e8299f7ea409827d504fa195b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 2100000, guid: 06da9871a68f536498d91ca8283c02a5, type: 2}
+  itemName: Soap

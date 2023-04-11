@@ -7,10 +7,10 @@ public class ToiletDoorTrigger : MonoBehaviour
     // Start is called before the first frame update
     public Animator animator;
 
-    public GameObject KeyObj;
-    public GameObject PlungerObj;
-    public GameObject ToiletPaperObj;
-    public GameObject SoapObj;
+    public InventoryItem_Key KeyObj;
+    public InventoryItem_Plunger PlungerObj;
+    public InventoryItem_ToiletPaper ToiletPaperObj;
+    public InventoryItem_Soap SoapObj;
 
     public bool key;
     public bool plunger;
@@ -22,10 +22,20 @@ public class ToiletDoorTrigger : MonoBehaviour
     // Update is called once per frame
     public void TriggerToiletDoor()
     {
-        key = KeyObj.GetComponent<InventoryItem>().collected;
-        plunger = PlungerObj.GetComponent<InventoryItem>().collected;
-        toiletPaper = ToiletPaperObj.GetComponent<InventoryItem>().collected;
-        soap = SoapObj.GetComponent<InventoryItem>().collected;
+        // key = KeyObj.GetComponent<InventoryItem>().collected;
+        // plunger = PlungerObj.GetComponent<InventoryItem>().collected;
+        // toiletPaper = ToiletPaperObj.GetComponent<InventoryItem>().collected;
+        // soap = SoapObj.GetComponent<InventoryItem>().collected;
+
+        key = InventoryItem_Key.collected;
+        plunger = InventoryItem_Plunger.collected;
+        toiletPaper = InventoryItem_ToiletPaper.collected;
+        soap = InventoryItem_Soap.collected;
+
+        Debug.Log("key: " + key);
+        Debug.Log("plunger: " + plunger);
+        Debug.Log("toiletPaper: " + toiletPaper);
+        Debug.Log("soap: " + soap);
 
         if (key && plunger && toiletPaper && soap)
         {
