@@ -8,6 +8,12 @@ public class InventoryItem : MonoBehaviour
     Material original_Material;
     public Material new_Material;
     public bool collected = false;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
         original_Material = GetComponent<Renderer>().material;
