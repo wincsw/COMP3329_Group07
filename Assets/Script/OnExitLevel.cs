@@ -13,6 +13,10 @@ public class OnExitLevel : MonoBehaviour
     public void EnterScene()
     {
         sceneInfo.isNextScene = isNextScene;
+        if (SceneManager.GetActiveScene().name == "Corridor")
+        {
+            sceneInfo.lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        }
         SceneManager.LoadScene(sceneName);
     }
 }
