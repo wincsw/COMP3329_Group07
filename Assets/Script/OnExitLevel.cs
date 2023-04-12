@@ -17,6 +17,7 @@ public class OnExitLevel : MonoBehaviour
         {
             sceneInfo.lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         }
+        Debug.Log("Entering " + sceneName);
         SceneManager.LoadScene(sceneName);
     }
 }
