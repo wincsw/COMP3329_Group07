@@ -7,7 +7,14 @@ public class InventoryItem : MonoBehaviour
     // Start is called before the first frame update
     Material original_Material;
     public Material new_Material;
-    public bool collected = false;
+    public static bool collected = false;
+    public string itemName;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
         original_Material = GetComponent<Renderer>().material;
