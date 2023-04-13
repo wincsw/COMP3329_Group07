@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     Vector2 movement;
+    public static bool finishToilet = false;
 
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastVertical", Input.GetAxisRaw("Vertical"));
         }
 
-        
+
     }
 
     void FixedUpdate()

@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    
-    public void EndGame()
+
+    public void EndGame(string endingScene)
     {
         if (!gameHasEnded)
         {
             gameHasEnded = true;
             Debug.Log("GAME OVER");
-            SceneManager.LoadScene("EndingPeed");
+            SceneManager.LoadScene(endingScene);
             // Restart();
         }
     }

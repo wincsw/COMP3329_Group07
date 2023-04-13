@@ -9,10 +9,13 @@ public class ProgressBar : MonoBehaviour
 
     public float fillSpeed;
     private float targetProgress = 0;
-    
+
+    public static float value = 0;
+
     private void Awake()
     {
         slider = gameObject.GetComponent<Slider>();
+        slider.value = ProgressBar.value;
     }
 
     // Start is called before the first frame update
@@ -26,11 +29,13 @@ public class ProgressBar : MonoBehaviour
     {
         if (slider.value < targetProgress)
         {
-            slider.value += fillSpeed * Time.deltaTime;
+            // slider.value += fillSpeed * Time.deltaTime;
+            ProgressBar.value += fillSpeed * Time.deltaTime;
+            slider.value = ProgressBar.value;
         }
         if (slider.value == 1)
         {
-            FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<GameManager>().EndGame("EndingPeed");
         }
     }
 

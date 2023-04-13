@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ab561bd093c4e84a74e554271d96dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Toilet
+  sceneName: Corridor
   isNextScene: 1
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!61 &554238946
@@ -2143,6 +2143,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.58, y: 2.18}
   m_EdgeRadius: 0
+--- !u!1001 &1206831572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5107708203493911260, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7874806
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46276772
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.787726
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107708203493911262, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1580511f709bcbe4b913834cb0da0520, type: 3}
 --- !u!95 &1222415077 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
