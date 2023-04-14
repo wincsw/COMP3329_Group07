@@ -7,7 +7,7 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider slider;
 
-    public float fillSpeed;
+    public static float fillSpeed = 0.01f;
     private float targetProgress = 0;
 
     public static float value = 0;
@@ -43,5 +43,12 @@ public class ProgressBar : MonoBehaviour
     {
         targetProgress = slider.value + newProgress;
 
+    }
+
+    public void ClearValue()
+    {
+        ProgressBar.value = 0;
+        slider.value = 0;
+        ProgressBar.fillSpeed = 0;
     }
 }

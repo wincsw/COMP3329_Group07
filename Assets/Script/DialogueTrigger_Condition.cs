@@ -32,11 +32,11 @@ public class DialogueTrigger_Condition : MonoBehaviour
         // soap = SoapObj.GetComponent<InventoryItem>().collected;
         // keycard = KeycardObj.GetComponent<InventoryItem>().collected;
 
-        key = InventoryItem_Key.collected;
-        plunger = InventoryItem_Plunger.collected;
-        toiletPaper = InventoryItem_ToiletPaper.collected;
-        soap = InventoryItem_Soap.collected;
-        keycard = InventoryItem_Keycard.collected;
+        // key = InventoryItem_Key.collected;
+        // plunger = InventoryItem_Plunger.collected;
+        // toiletPaper = InventoryItem_ToiletPaper.collected;
+        // soap = InventoryItem_Soap.collected;
+        // keycard = InventoryItem_Keycard.collected;
 
         Debug.Log("key: " + key);
         Debug.Log("plunger: " + plunger);
