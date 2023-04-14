@@ -10,6 +10,9 @@ public class EndingDialogueManager : MonoBehaviour
 
     public TMP_Text instructionText;
 
+    public float typingSpeed;
+
+    public float pauseSecond;
     private Queue<string> sentences;
 
 
@@ -62,28 +65,35 @@ public class EndingDialogueManager : MonoBehaviour
         bool isTextFormat = false;
         foreach (char letter in sentence.ToCharArray())
         {
+            if (letter == '>' && isTextFormat)
+            {
+                isTextFormat = false;
+                textFormat += letter;
+                dialogueText.text += textFormat;
+                textFormat = "";
+                continue;
+            }
             if (letter == '<' || isTextFormat)
             {  
                 isTextFormat = true;
                 textFormat += letter;
                 continue;
             }
-            if (letter == '>' && isTextFormat)
-            {
-                isTextFormat = false;
-                dialogueText.text += textFormat;
-                textFormat = "";
-                continue;
-            }
             dialogueText.text += letter;
-            yield return null;
+            if (isTextFormat)
+            {
+                yield return null;
+            }
+            yield return new WaitForSeconds(typingSpeed);
         }
         if (sentences.Count != 0)
         {
+            yield return new WaitForSeconds(pauseSecond);
             instructionText.text = "► Press SPACE to continue";
         }
         else
         {
+            yield return new WaitForSeconds(pauseSecond);
             instructionText.text = "► Press F to replay";
         }
         

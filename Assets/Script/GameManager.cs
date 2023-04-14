@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("DreamChamber");
+        Debug.Log("Restart");
+        // SceneManager.LoadScene("DreamChamber");
     }
 }

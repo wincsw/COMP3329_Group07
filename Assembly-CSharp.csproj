@@ -39,6 +39,7 @@
      <Compile Include="Assets/Script/InventoryItem_Plunger.cs" />
      <Compile Include="Assets/Script/PlayerMovement.cs" />
      <Compile Include="Assets/Script/CollectSoap.cs" />
+     <Compile Include="Assets/Script/EndingControl.cs" />
      <Compile Include="Assets/Script/OnExitLevel.cs" />
      <Compile Include="Assets/Script/DialogueTrigger_Condition.cs" />
      <Compile Include="Assets/Script/InventoryItem_ToiletPaper.cs" />
@@ -63,10 +64,11 @@
      <Compile Include="Assets/Script/CollectToiletPaper.cs" />
      <Compile Include="Assets/Script/InventoryItem_Key.cs" />
      <Compile Include="Assets/Script/ToiletDoorTrigger.cs" />
-     <Compile Include="Assets/Script/SceneInfo.cs" />
      <Compile Include="Assets/Script/DoNotDestroy.cs" />
-     <Compile Include="Assets/Script/EndingControl.cs" />
+     <Compile Include="Assets/Script/SceneInfo.cs" />
      <Compile Include="Assets/Script/EndingDialogueManager.cs" />
+     <Compile Include="Assets/Script/Menu.cs" />
+     <Compile Include="Assets/Script/Select.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

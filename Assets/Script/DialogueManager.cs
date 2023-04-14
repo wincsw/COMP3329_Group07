@@ -13,12 +13,14 @@ public class DialogueManager : MonoBehaviour
     public Animator playerAnimator;
 
     private Queue<string> sentences;
+    public bool isActive;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        isActive = false;
         sentences = new Queue<string>();
     }
 
@@ -32,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        isActive = true;
         playerAnimator.SetFloat("Speed", 0f);
         FindObjectOfType<PlayerMovement>().enabled = false;
         animator.SetBool("IsOpen", true);
@@ -67,6 +70,7 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
+        isActive = false;
         Debug.Log("End reading");
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().enabled = true;
