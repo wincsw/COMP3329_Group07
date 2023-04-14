@@ -7,18 +7,41 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
     
-    public void EndGame()
+    public void Awake()
+    {
+        GameObject[] gameManager = GameObject.FindGameObjectsWithTag("GameController");
+        if (gameManager.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }
+    public void EndPeed()
     {
         if (!gameHasEnded)
         {
             gameHasEnded = true;
             Debug.Log("GAME OVER");
             SceneManager.LoadScene("EndingPeed");
-            // Restart();
         }
     }
 
-    void Restart()
+    public void EndGood()
+    {
+
+    }
+
+    public void EndTrapped()
+    {
+
+    }
+
+    public void EndCaught()
+    {
+
+    }
+
+    public void Restart()
     {
         SceneManager.LoadScene("DreamChamber");
     }

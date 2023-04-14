@@ -35,7 +35,7 @@ public class ProgressBar : MonoBehaviour
         }
         if (slider.value == 1)
         {
-            FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<GameManager>().EndPeed();
         }
     }
 
