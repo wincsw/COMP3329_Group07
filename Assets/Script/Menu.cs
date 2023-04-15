@@ -22,14 +22,18 @@ public class Menu : MonoBehaviour
                 Pause();
             }
         }
-        if (Input.GetAxisRaw("Vertical") > 0)
+        if (pauseMenuUI.activeSelf)
         {
-            arrows.transform.position = new Vector3Int(0, 0, 0);
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                arrows.transform.localPosition = new Vector2(0, 0);
+            }
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                arrows.transform.localPosition = new Vector2(0, -100);
+            }
         }
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            arrows.transform.position = new Vector3Int(0, -1, 0);
-        }
+        
     }
 
 
