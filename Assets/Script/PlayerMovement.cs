@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
+    public static bool finishToilet = false;
+
     Vector2 movement;
 
 
@@ -29,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastVertical", Input.GetAxisRaw("Vertical"));
         }
 
-        
+
     }
 
     void FixedUpdate()

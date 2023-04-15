@@ -9,18 +9,23 @@ public class ToiletTrigger : MonoBehaviour
     bool close = true;
 
     // Update is called once per frame
-    public void TriggerToilet()
+    public void OpenToilet()
     {
-        // animator.SetBool("IsOpen", true);
         if (close)
         {
             animator.Play("Toilet_Open");
             close = false;
-            // boxCollider.size = new Vector2(0.24f, 1f);
-            // boxCollider.offset = new Vector2(-0.04f, 0.5f);
             return;
         }
+    }
 
-
+    public void CloseToilet()
+    {
+        if (!close)
+        {
+            animator.Play("Toilet_Close");
+            close = true;
+            return;
+        }
     }
 }
