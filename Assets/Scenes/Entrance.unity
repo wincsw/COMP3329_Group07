@@ -478,22 +478,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1190602443, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1045147233}
-    - target: {fileID: 1190602443, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
-      objectReference: {fileID: 0}
-    - target: {fileID: 1836819233, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3223316690073233227, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
-      propertyPath: fillSpeed
-      value: 0.01
-      objectReference: {fileID: 0}
     - target: {fileID: 3223316691483739469, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -621,10 +605,10 @@ GameObject:
   - component: {fileID: 961089635}
   - component: {fileID: 961089634}
   - component: {fileID: 961089633}
-  - component: {fileID: 961089632}
   - component: {fileID: 961089631}
+  - component: {fileID: 961089636}
   m_Layer: 0
-  m_Name: corridor8_Zgates
+  m_Name: i_Gates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,9 +645,9 @@ MonoBehaviour:
   interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 961089632}
-        m_TargetAssemblyTypeName: DialogueTrigger_Condition, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 961089636}
+        m_TargetAssemblyTypeName: EntranceGateControl, Assembly-CSharp
+        m_MethodName: trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -674,39 +658,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inCoolDown: 0
---- !u!114 &961089632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961089629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179df3c34eef6474e82bef477b84a169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  needKey: 1
-  needPlunger: 0
-  needToiletPaper: 0
-  needSoap: 0
-  needKeycard: 0
-  dialogueWithObj:
-    name: 
-    sentences: []
-  dialogueWithoutObj:
-    name: 
-    sentences: []
-  KeyObj: {fileID: 0}
-  PlungerObj: {fileID: 0}
-  ToiletPaperObj: {fileID: 0}
-  SoapObj: {fileID: 0}
-  KeycardObj: {fileID: 0}
-  key: 0
-  plunger: 0
-  toiletPaper: 0
-  soap: 0
-  keycard: 0
 --- !u!61 &961089633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -811,6 +762,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &961089636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961089629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e10ca261e19040229da48907986a989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - I haven't peed yet!
+  KeycardObj: {fileID: 0}
+  keycard: 0
 --- !u!1 &1029413117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,17 +1051,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11be064cb798418e89be13003bb9e71, type: 3}
---- !u!114 &1045147233 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4326182855760952143, guid: f11be064cb798418e89be13003bb9e71, type: 3}
-  m_PrefabInstance: {fileID: 1045147232}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b927df6a4ce415a90d7f8ee9cc82d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1258287686
 GameObject:
   m_ObjectHideFlags: 0

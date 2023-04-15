@@ -5,6 +5,7 @@ using TMPro;
 
 public class EndingDialogueManager : MonoBehaviour
 {
+    public EndingControl endingControl;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
@@ -31,7 +32,7 @@ public class EndingDialogueManager : MonoBehaviour
         }
         if (sentences.Count == 0 && Input.GetKeyDown("f"))
         {
-            FindObjectOfType<EndingControl>().RestartGame();
+            endingControl.RestartGame();
         }
     }
 

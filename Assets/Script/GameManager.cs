@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
+    public bool hasPeed = false; 
+
+    [SerializeField]
+    public SceneInfo sceneInfo;
     
     public void Awake()
     {
@@ -21,19 +25,29 @@ public class GameManager : MonoBehaviour
         if (!gameHasEnded)
         {
             gameHasEnded = true;
-            Debug.Log("GAME OVER");
+            Debug.Log("GAME OVER: PEED END");
             SceneManager.LoadScene("EndingPeed");
         }
     }
 
     public void EndGood()
     {
-
+        if (!gameHasEnded)
+        {
+            gameHasEnded = true;
+            Debug.Log("GAME OVER: GOOD END");
+            SceneManager.LoadScene("EndingGood");
+        }
     }
 
     public void EndTrapped()
     {
-
+        if (!gameHasEnded)
+        {
+            gameHasEnded = true;
+            Debug.Log("GAME OVER: TRAPPED END");
+            SceneManager.LoadScene("EndingTrapped");
+        }
     }
 
     public void EndCaught()
@@ -44,6 +58,15 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Debug.Log("Restart");
-        // SceneManager.LoadScene("DreamChamber");
+        GameObject[] musicObjs = GameObject.FindGameObjectsWithTag("GameMusic");
+        foreach (GameObject musicObj in musicObjs)
+        {
+            Destroy(musicObj);
+        }
+        hasPeed = false;
+        gameHasEnded = false;
+        FindObjectOfType<ProgressBar>().ResetValue();
+        sceneInfo.lastPosition = new Vector2(46.5f, 5);
+        SceneManager.LoadScene("DreamChamber");
     }
 }

@@ -764,10 +764,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1190602443, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2046109364}
     - target: {fileID: 3223316691483739469, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2753,17 +2749,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2046109364 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4326182855760952143, guid: f11be064cb798418e89be13003bb9e71, type: 3}
-  m_PrefabInstance: {fileID: 901800487}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b927df6a4ce415a90d7f8ee9cc82d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2101107067
 GameObject:
   m_ObjectHideFlags: 0

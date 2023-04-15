@@ -12,6 +12,7 @@ public class Menu : MonoBehaviour
     public Button upButton;
     public Button downButton;
 
+
     public GameObject arrows;
     void Update()
     {
@@ -57,6 +58,14 @@ public class Menu : MonoBehaviour
         FindObjectOfType<DialogueManager>().enabled = false;
         Time.timeScale = 0;
         GameIsPaused = true;
+    }
 
+    public void Restart()
+    {
+        Debug.Log("Resume");
+        pauseMenuUI.SetActive(false);
+        GameIsPaused = false;
+        Time.timeScale = 1;
+        FindObjectOfType<GameManager>().Restart();
     }
 }

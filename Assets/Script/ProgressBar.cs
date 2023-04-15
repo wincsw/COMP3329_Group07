@@ -7,6 +7,7 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider slider;
 
+
     public static float fillSpeed = 0.01f;
     private float targetProgress = 0;
 
@@ -50,5 +51,14 @@ public class ProgressBar : MonoBehaviour
         ProgressBar.value = 0;
         slider.value = 0;
         ProgressBar.fillSpeed = 0;
+        FindObjectOfType<GameManager>().hasPeed = true;
+    }
+
+    public void ResetValue()
+    {
+        ProgressBar.value = 0;
+        slider.value = 0;
+        ProgressBar.fillSpeed = 0.01f;
+        FindObjectOfType<GameManager>().hasPeed = false;
     }
 }
