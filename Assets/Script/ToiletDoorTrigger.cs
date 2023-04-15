@@ -20,7 +20,7 @@ public class ToiletDoorTrigger : MonoBehaviour
     public BoxCollider2D boxCollider;
 
     // Update is called once per frame
-    public void TriggerToiletDoor()
+    public void OpenToiletDoor()
     {
         // key = KeyObj.GetComponent<InventoryItem>().collected;
         // plunger = PlungerObj.GetComponent<InventoryItem>().collected;
@@ -37,26 +37,29 @@ public class ToiletDoorTrigger : MonoBehaviour
         Debug.Log("toiletPaper: " + toiletPaper);
         Debug.Log("soap: " + soap);
 
-        if (key && plunger && toiletPaper && soap)
+        if (key && plunger && toiletPaper && soap && close)
         {
-            // animator.SetBool("IsOpen", true);
-            if (close)
-            {
-                animator.Play("ToiletDoor_Open");
-                close = false;
-                boxCollider.size = new Vector2(0.24f, 1f);
-                boxCollider.offset = new Vector2(-0.04f, 0.5f);
-                return;
-            }
-            else
-            {
-                animator.Play("ToiletDoor_Close");
-                close = true;
-                boxCollider.size = new Vector2(0.8f, 0.8f);
-                boxCollider.offset = new Vector2(-0.4f, -0.24f);
-                return;
-            }
 
+            animator.Play("ToiletDoor_Open");
+            close = false;
+            boxCollider.size = new Vector2(0.24f, 1f);
+            boxCollider.offset = new Vector2(-0.04f, 0.5f);
+
+            return;
+
+        }
+
+    }
+
+    public void CloseToiletDoor()
+    {
+        if (!close)
+        {
+            animator.Play("ToiletDoor_Close");
+            close = true;
+            boxCollider.size = new Vector2(0.8f, 0.8f);
+            boxCollider.offset = new Vector2(-0.4f, -0.24f);
+            return;
         }
 
     }
