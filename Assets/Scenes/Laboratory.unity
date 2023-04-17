@@ -371,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
-      value: 0.56
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Offset.x
@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
-      value: 0.56
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Offset.x
@@ -457,6 +457,66 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.38
       objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Here is a beaker with some OIL.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 445801747}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 530731797}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerPickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IsSoapMade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CollectItem_Soap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SoapMake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
 --- !u!4 &445801744 stripped
@@ -464,6 +524,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7497947654388840804, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
   m_PrefabInstance: {fileID: 445801743}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &445801745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840731, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 445801743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &445801747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445801745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d8fbeed4d58917c9bb1a72ea404a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeaker: 0
+  isSink: 0
+  isOil: 1
+  isLye: 0
+  soapItems: {fileID: 530731797}
 --- !u!1 &459340194
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +657,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &530731792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223316689518271538, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 2039321258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &530731797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530731792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50ad744c6023a77fb9f87dcbb585f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lye: 0
+  oil: 0
+  water: 0
+  dialogue:
+    name: 
+    sentences:
+    - 'Mix mix mix...
+
+      Now I get a SOAP!!'
 --- !u!1 &632759669
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +1053,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2039321259}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 2039321260}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1345565247}
     - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -1731,6 +1851,14 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.32
       objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.32
+      objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840801, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1787,12 +1915,133 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.32
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1167893453}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1167893451}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 530731797}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerPickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IsSoapMade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger_Sink, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CollectItem_Soap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SoapMake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
 --- !u!4 &1167893449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7497947654388840804, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
   m_PrefabInstance: {fileID: 1167893448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1167893450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840731, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 1167893448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1167893451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167893450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d8fbeed4d58917c9bb1a72ea404a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeaker: 0
+  isSink: 1
+  isOil: 0
+  isLye: 0
+  soapItems: {fileID: 530731797}
+--- !u!114 &1167893453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167893450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cbc394f66736af1a9b8379f19bf9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveBeaker:
+    name: 
+    sentences:
+    - Now I can get some WATER.
+  noBeaker:
+    name: 
+    sentences:
+    - I mush need something to hold the water.
+  beaker: 0
+--- !u!95 &1345565247 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
+  m_PrefabInstance: {fileID: 1763724986}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1417596805
 PrefabInstance:
@@ -1811,11 +2060,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
-      value: 0.62
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Offset.x
-      value: 0.1
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1883,11 +2132,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
-      value: 0.62
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Offset.x
-      value: 0.1
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1897,6 +2146,44 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.38
       objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Here is an empty beaker.
+
+        I wonder what is it for?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1417596808}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerPickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CollectItem_Soap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
 --- !u!4 &1417596806 stripped
@@ -1904,6 +2191,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7497947654388840804, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
   m_PrefabInstance: {fileID: 1417596805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1417596807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840731, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 1417596805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1417596808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417596807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d8fbeed4d58917c9bb1a72ea404a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeaker: 1
+  isSink: 0
+  isOil: 0
+  isLye: 0
+  soapItems: {fileID: 530731797}
 --- !u!1 &1452715288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,7 +2579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.x
-      value: 0.56
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840800, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
@@ -2342,7 +2651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.x
-      value: 0.56
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840805, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: m_Size.y
@@ -2360,6 +2669,66 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.38
       objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Here is some LYE in the beaker.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1821117566}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 530731797}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerPickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IsSoapMade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CollectItem_Soap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SoapMake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
 --- !u!4 &1821117563 stripped
@@ -2367,6 +2736,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7497947654388840804, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
   m_PrefabInstance: {fileID: 1821117562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1821117564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840731, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 1821117562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1821117566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821117564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d8fbeed4d58917c9bb1a72ea404a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeaker: 0
+  isSink: 0
+  isOil: 0
+  isLye: 1
+  soapItems: {fileID: 530731797}
 --- !u!1 &1897033630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,3 +2926,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+--- !u!95 &2039321259 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3754946265277475456, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 2039321258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039321260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3754946264395259580, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 2039321258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

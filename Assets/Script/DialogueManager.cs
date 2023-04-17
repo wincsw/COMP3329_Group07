@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(!FindObjectOfType<PlayerMovement>().enabled && Input.GetKeyDown("space"))
+        if (!FindObjectOfType<PlayerMovement>().enabled && Input.GetKeyDown("space"))
         {
             DisplayNextSentence();
         }
@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         isActive = true;
+        Debug.Log("isActive: " + isActive);
         playerAnimator.SetFloat("Speed", 0f);
         FindObjectOfType<PlayerMovement>().enabled = false;
         animator.SetBool("IsOpen", true);
@@ -57,7 +58,7 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));  
+        StartCoroutine(TypeSentence(sentence));
     }
     IEnumerator TypeSentence(string sentence)
     {
