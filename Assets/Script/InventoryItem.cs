@@ -10,10 +10,7 @@ public class InventoryItem : MonoBehaviour
     public static bool collected = false;
     public string itemName;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+
 
     void Start()
     {
