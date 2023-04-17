@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PrinterVar : MonoBehaviour
 {
-    public static bool printedWeapon = false;
+    public static bool printedWeapon;
     public GameObject PrinterAudio;
 
     public void TriggerPriner()
@@ -14,5 +14,11 @@ public class PrinterVar : MonoBehaviour
             PrinterVar.printedWeapon = true;
             PrinterAudio.GetComponent<AudioTrigger>().TriggerAudio();
         }
+    }
+
+    public void ResetPrint()
+    {
+        PrinterVar.printedWeapon = false;
+
     }
 }

@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger_3DArea : MonoBehaviour
+public class DialogueTrigger_Printer : MonoBehaviour
 {
-    public bool needWeapon = true;
-    public bool needDefeat;
     public FightBreadFish breadFish;
     public Dialogue dialogueWithObj;
     public Dialogue dialogueWithoutObj;
     public bool weapon;
-    public bool defeat;
 
 
     public void TriggerDialogue()
@@ -28,24 +25,10 @@ public class DialogueTrigger_3DArea : MonoBehaviour
         // soap = InventoryItem_Soap.collected;
         // keycard = InventoryItem_Keycard.collected;
         weapon = PrinterVar.printedWeapon;
-        defeat = breadFish.defeat;
 
-        bool[] needList = { needWeapon, needWeapon };
-        bool[] hvList = { weapon, defeat };
-
-        bool hvAllObj = true;
-
-        for (int i = 0; i < 2; i++)
-        {
-            if (needList[i] == true && hvList[i] == false)
-            {
-                hvAllObj = false;
-                break;
-            }
-        }
 
         // if (key && plunger && toiletPaper && soap)
-        if (hvAllObj)
+        if (weapon)
         {
             Debug.Log("Dialogue with obj Triggered");
             FindObjectOfType<DialogueManager>().StartDialogue(dialogueWithObj);

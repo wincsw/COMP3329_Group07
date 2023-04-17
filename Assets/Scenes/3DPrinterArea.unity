@@ -904,9 +904,9 @@ GameObject:
   - component: {fileID: 867017654}
   - component: {fileID: 867017653}
   - component: {fileID: 867017652}
-  - component: {fileID: 867017657}
-  - component: {fileID: 867017656}
   - component: {fileID: 867017655}
+  - component: {fileID: 867017656}
+  - component: {fileID: 867017658}
   m_Layer: 0
   m_Name: i-BreadFishTable
   m_TagString: Untagged
@@ -1093,8 +1093,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 867017657}
-        m_TargetAssemblyTypeName: DialogueTrigger_3DArea, Assembly-CSharp
+      - m_Target: {fileID: 867017658}
+        m_TargetAssemblyTypeName: DialogueTrigger_BreadFish, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
@@ -1106,7 +1106,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inCoolDown: 0
---- !u!114 &867017657
+--- !u!114 &867017658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1115,23 +1115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 867017650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63d83a247ffe3ee308f23eff6d3585cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d47ec0e7dc2a1c789cec649f17b05e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needWeapon: 1
-  needDefeat: 1
-  breadFish: {fileID: 867017655}
-  dialogueWithObj:
+  dialogueWithoutWeapon:
     name: 
     sentences:
-    - '"You have already defeated me
-
-      I have nothing to give you now ypu greedy
-      human."'
-  dialogueWithoutObj:
-    name: 
-    sentences:
-    - 
     - '"Hey!!!"'
     - Wait? Who is talking?
     - '"Human look down, I''m on the table."'
@@ -1144,8 +1133,33 @@ MonoBehaviour:
     - "\"This toilet paper is my baby! \nIf you want it you need to wallk pass my
       dead body!\""
     - Ok..... this is weird....
-  weapon: 0
+  dialogueWithWeapon:
+    name: 
+    sentences:
+    - '"Human! What is in your hand?"'
+    - 'A knife?
+
+      To be honest I am not sure too.
+
+      I just got it from
+      the 3D printer.'
+    - '"It is a weapon!
+
+      You have defeated me.
+
+      Here the toliet paper."'
+    - 'Ok? Thanks?
+
+      *Am I losing my sanity?*'
+  dialogueDefeated:
+    name: 
+    sentences:
+    - '"You have already defeated me
+
+      I have nothing to give you now ypu greedy
+      human."'
   defeat: 0
+  weapon: 0
 --- !u!1 &973377211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1282,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!61 &1024823844
 BoxCollider2D:
@@ -1294,7 +1308,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!212 &1024823845
 SpriteRenderer:
@@ -1373,8 +1387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d83a247ffe3ee308f23eff6d3585cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needWeapon: 1
-  needDefeat: 0
   breadFish: {fileID: 867017655}
   dialogueWithObj:
     name: 
@@ -1388,7 +1400,6 @@ MonoBehaviour:
       Let''s
       print one!'
   weapon: 0
-  defeat: 0
 --- !u!114 &1024823848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,7 +1557,31 @@ MonoBehaviour:
   isInRange: 0
   interactAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1098337446}
+        m_TargetAssemblyTypeName: OnExitLevel, Assembly-CSharp
+        m_MethodName: EnterScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1693476183}
+        m_TargetAssemblyTypeName: PrinterVar, Assembly-CSharp
+        m_MethodName: ResetPrint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inCoolDown: 0
 --- !u!61 &1098337448
 BoxCollider2D:
@@ -2056,7 +2091,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!61 &1693476181
 BoxCollider2D:
@@ -2082,7 +2117,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!212 &1693476182
 SpriteRenderer:
@@ -2202,24 +2237,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d83a247ffe3ee308f23eff6d3585cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needWeapon: 1
-  needDefeat: 0
   breadFish: {fileID: 867017655}
   dialogueWithObj:
     name: 
     sentences:
-    - 
     - I already have printed something, let's not waste the resource.
   dialogueWithoutObj:
     name: 
     sentences:
-    - 
-    - 'Oh here are some 3D printers and a program to print a weapon.
+    - 'The 3D printers seems to be printing somthing.
 
-      Let''s
-      print one!'
+      Finders keeper~'
   weapon: 0
-  defeat: 0
 --- !u!1 &1761284161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2310,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!61 &1761284164
 BoxCollider2D:
@@ -2307,7 +2336,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.52}
+  m_Size: {x: 2.06, y: 1.71}
   m_EdgeRadius: 0
 --- !u!212 &1761284165
 SpriteRenderer:
@@ -2386,8 +2415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d83a247ffe3ee308f23eff6d3585cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needWeapon: 1
-  needDefeat: 0
   breadFish: {fileID: 867017655}
   dialogueWithObj:
     name: 
@@ -2401,7 +2428,6 @@ MonoBehaviour:
       Let''s
       print one!'
   weapon: 0
-  defeat: 0
 --- !u!114 &1761284168
 MonoBehaviour:
   m_ObjectHideFlags: 0

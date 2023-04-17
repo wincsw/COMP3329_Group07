@@ -15,7 +15,8 @@ public class FightBreadFish : MonoBehaviour
         if (weapon)
         {
             defeat = true;
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            InventoryItem_ToiletPaper.collected = true;
+
         }
     }
 
