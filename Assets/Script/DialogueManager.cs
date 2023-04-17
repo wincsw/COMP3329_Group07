@@ -72,6 +72,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isActive = false;
+        Debug.Log("isActive: " + isActive);
+
         Debug.Log("End reading");
         animator.SetBool("IsOpen", false);
         FindObjectOfType<PlayerMovement>().enabled = true;
