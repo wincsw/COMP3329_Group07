@@ -7,6 +7,7 @@ public class ToiletTrigger : MonoBehaviour
     // Start is called before the first frame update
     public Animator animator;
     bool close = true;
+    public static bool finishToilet = false;
 
     // Update is called once per frame
     public void OpenToilet()
@@ -15,6 +16,7 @@ public class ToiletTrigger : MonoBehaviour
         {
             animator.Play("Toilet_Open");
             close = false;
+            ToiletTrigger.finishToilet = true;
             return;
         }
     }
