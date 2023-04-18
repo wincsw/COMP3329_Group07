@@ -6,7 +6,6 @@ using TMPro;
 public class EndingDialogueManager : MonoBehaviour
 {
     public EndingControl endingControl;
-    public TMP_Text nameText;
     public TMP_Text dialogueText;
 
     public TMP_Text instructionText;

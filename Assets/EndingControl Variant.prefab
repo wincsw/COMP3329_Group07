@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3786709099668843398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2082779784663189697, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_Name
+      value: EndingControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: endingDialogueManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: So you think you can just walk out here scot-free, huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Life just ain''t that easy, pal.
+
+        You have overstayed your
+        welcome.
+
+        And now you should pay the price.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8735046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28356045
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6527283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082779784663189699, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
