@@ -460,6 +460,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 
   isNextScene: 0
+  lockRoom: 0
+  objNeed: 
+  dialogue:
+    name: 
+    sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!114 &145434929
 MonoBehaviour:
@@ -542,6 +547,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1, y: 3.2}
   m_EdgeRadius: 0
+--- !u!114 &147188615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3754946264395259580, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 305731663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &263242958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1662,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 27.22843}
   m_EdgeRadius: 0
+--- !u!95 &601668243 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3754946265277475456, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 305731663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &678129082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2732,6 +2753,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Lab
   isNextScene: 0
+  lockRoom: 0
+  objNeed: Soap
+  dialogue:
+    name: 
+    sentences:
+    - No time to go back to this room!!!
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!61 &1228892734
 BoxCollider2D:
@@ -2792,6 +2819,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 601668243}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 147188615}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1914810063}
     - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -2892,6 +2931,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Toilet
   isNextScene: 0
+  lockRoom: 0
+  objNeed: 
+  dialogue:
+    name: 
+    sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!114 &1238010262
 MonoBehaviour:
@@ -3470,6 +3514,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: DreamChamber
   isNextScene: 0
+  lockRoom: 0
+  objNeed: 
+  dialogue:
+    name: 
+    sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!114 &1474804845
 MonoBehaviour:
@@ -4031,6 +4080,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 3DPrinterArea
   isNextScene: 0
+  lockRoom: 0
+  objNeed: 
+  dialogue:
+    name: 
+    sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!61 &1812974215
 BoxCollider2D:
@@ -4174,6 +4228,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 27.22843}
   m_EdgeRadius: 0
+--- !u!95 &1914810063 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
+  m_PrefabInstance: {fileID: 2055451375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1998661406
 GameObject:
   m_ObjectHideFlags: 0
