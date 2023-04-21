@@ -27,10 +27,10 @@ public class ToiletDoorTrigger : MonoBehaviour
         // toiletPaper = ToiletPaperObj.GetComponent<InventoryItem>().collected;
         // soap = SoapObj.GetComponent<InventoryItem>().collected;
 
-        // key = InventoryItem_Key.collected;
-        // plunger = InventoryItem_Plunger.collected;
-        // toiletPaper = InventoryItem_ToiletPaper.collected;
-        // soap = InventoryItem_Soap.collected;
+        key = InventoryItem_Key.collected;
+        plunger = InventoryItem_Plunger.collected;
+        toiletPaper = InventoryItem_ToiletPaper.collected;
+        soap = InventoryItem_Soap.collected;
 
         Debug.Log("key: " + key);
         Debug.Log("plunger: " + plunger);
