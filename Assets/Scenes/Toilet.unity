@@ -2551,6 +2551,12 @@ PlayableDirector:
     value: {fileID: 348062636}
   - key: {fileID: 7183788800977437911, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
     value: {fileID: 652474689}
+  - key: {fileID: -2922020743661770065, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5784192511454109885, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5656674471166606134, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1422236927
@@ -3206,10 +3212,10 @@ MonoBehaviour:
   PlungerObj: {fileID: 1118591436}
   ToiletPaperObj: {fileID: 1639104136}
   SoapObj: {fileID: 1532960196}
-  key: 1
-  plunger: 1
-  toiletPaper: 1
-  soap: 1
+  key: 0
+  plunger: 0
+  toiletPaper: 0
+  soap: 0
   boxCollider: {fileID: 1713946007}
 --- !u!114 &1713946014
 MonoBehaviour:
@@ -3231,23 +3237,22 @@ MonoBehaviour:
   dialogueWithObj:
     name: 
     sentences:
-    - I can finally go to the toilet!!!
+    - Finally!!!
   dialogueWithoutObj:
     name: 
     sentences:
-    - 'Wait!! I need to have all the KEY, PLUNGER, SOAP, TOILET PAPER before going
-      to the toilet.
-
-      Can''t be an unhygenic person!'
+    - "Peter Piddington would be disappointed in you if you used the toilet without
+      the <color=\u201Dgreen> PLUNGER </b></color>, <color=\u201Dgreen><b> SOAP </b></color>,
+      and <color=\u201Dgreen><b> TOILET PAPER </b></color>"
   KeyObj: {fileID: 1879648375}
   PlungerObj: {fileID: 1118591436}
   ToiletPaperObj: {fileID: 1639104136}
   SoapObj: {fileID: 1532960196}
   KeycardObj: {fileID: 1127758516}
-  key: 1
-  plunger: 1
-  toiletPaper: 1
-  soap: 1
+  key: 0
+  plunger: 0
+  toiletPaper: 0
+  soap: 0
   keycard: 0
 --- !u!1 &1801443910
 GameObject:

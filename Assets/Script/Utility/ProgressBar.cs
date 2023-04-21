@@ -8,7 +8,7 @@ public class ProgressBar : MonoBehaviour
     public Slider slider;
 
 
-    public static float fillSpeed = 0.01f;
+    public static float fillSpeed = 0.005f;
     private float targetProgress = 0;
 
     public static float value = 0;

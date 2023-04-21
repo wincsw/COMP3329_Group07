@@ -599,25 +599,22 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - There's a book on the desk.
-    - '"Proper Hygiene for Dummies
-
-      -----------------------Peter Piddington"'
-    - '"Inside everyone''s body, there exists a meter..."'
-    - '"And when that meter fills up, it signals the time to relieve ourselves.
-
-      Such
-      meter is called the Peedometer..."'
-    - '"However, as a civilized member of the society, the call of nature shall only
-      be answered in proper places..."'
-    - '"One such place is the TOILET, which may require a KEY to enter... "'
-    - '"To avoid messy situations, you should always use a PLUNGER to unclog  before
-      emptying yourself..."'
-    - "\"Use TOILET PAPER. As the saying goes, \n'If you don't wipe, you'll leave
-      stripes' ...\""
-    - '"Wash your hands with SOAP, and the viruses lose hope..."'
-    - ......
-    - 'The other 300 pages are all full of rhymes like this. '
+    - "<i>\u201CProper Hygeine for Dummies\u201D</i>\nBy Peter Piddington"
+    - "<i> \u201CAs a civilized member of society the call of nature should only
+      be answered in proper places\u2026\u201D </i>\n<i>\u201DOne such place is the
+      <color=\u201Dgreen> TOILET </color> which might require a <color=\u201Dgreen>
+      KEY </color>\u201D</i>"
+    - "<i>\u201CTo keep it clean and tidy, we have some tools,\nA <color=\u201Dgreen>
+      PLUNGER </color>, some <color=\u201Dgreen>SOAP </color>, and some <color=\u201Dgreen>
+      TOILET PAPER </color> rolls.\u201D</i>"
+    - "<i>\u201CNow, let me introduce you to the <color=\u201Dgreen><b> PEEDOMETER
+      </b></color>, \nA gauge that tracks our bowels, a natural promoter,\u201D</i>"
+    - "<i>\u201CIt fills up gradually, and when it's full, \nIf it's time to go,
+      no need to stall.\u201D</i>"
+    - "<i>\u201CFor a clean and fresh experience each time,\nA healthy body and mind,
+      in a world so sublime.\u201D</i>"
+    - "\u2026\u2026"
+    - The rest of the 300 pages are filled with similar rhymes.
 --- !u!114 &446558011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2742,21 +2739,21 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - There's a note on the desk.
-    - '"Hey buddy! So, funny story... I may have lost my card somewhere.  And I need
-      to print my lecture notes for tmr''s exam."'
-    - '"So I took the liberty to borrow your card (and all your printing credits)
-      In my defense, I tried ~really hard~ to wake you up!"'
+    - "<i>\u201Chey!\u201D</i>"
+    - "<i>\u201Cfunny story\u2026 I may have lost my card somewhere.and  I reaaaaally
+      need to print my lecture notes for a quiz that's worth a whopping 0.5%!</i>"
+    - "<i>\u201Cso, it looks like we're going to have to take our friendship to the
+      next level because I kind of stole your <color=\u201Dgreen>STUDENT CARD</color>"
     - '"But don''t worry! As long as you didn''t oversleep, you could still get out
       of here! And I''ll give you back your card tmr :D"'
-    - '"---------------Love,
-
-      ----------------Suki Dadelu
-
-      P.S. maybe
-      not your printing units tho :( "'
-    - ......
-    - You realized your student card is not with you.
+    - "<i>\u201CI tried to wake you up to ask, but it looks like you're a pretty
+      heavy sleeper, my dude.\u201D</i>"
+    - "<i>\u201Cdon't worry, I promise to return it to you tomorrow. you won't even
+      know it was gone, except for all your printing credits\u201D</i>"
+    - "<i>\u201Cthanks for letting me borrow your card, you're the best! and don't
+      worry, as long as you don't oversleep, you'll be fine without it :D\u201D</i>"
+    - "\u2026\u2026"
+    - You realise your student card is not with you.
 --- !u!114 &2101107073
 MonoBehaviour:
   m_ObjectHideFlags: 0

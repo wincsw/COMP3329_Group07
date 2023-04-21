@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectKeycard : MonoBehaviour
 {
     // Start is called before the first frame update
-    public InventoryItem_Keycard inventoryItem;
+    public GameObject inventoryItem;
 
 
     // can hv other trigger

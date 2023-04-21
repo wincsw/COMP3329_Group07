@@ -793,6 +793,7 @@ GameObject:
   - component: {fileID: 1029413120}
   - component: {fileID: 1029413119}
   - component: {fileID: 1029413122}
+  - component: {fileID: 1029413123}
   m_Layer: 0
   m_Name: i-SecurityRoomDoor
   m_TagString: Untagged
@@ -854,7 +855,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -868,7 +869,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.2, y: 6.4}
+  m_Size: {x: 4.2, y: 6.55}
   m_EdgeRadius: 0
 --- !u!212 &1029413121
 SpriteRenderer:
@@ -936,7 +937,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: SecurityRoom
   isNextScene: 1
+  lockRoom: 0
+  objNeed: Key
+  dialogue:
+    name: 
+    sentences:
+    - No time to go back to this room!!!
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
+--- !u!61 &1029413123
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029413117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.2, y: 6.4}
+    newSize: {x: 4.2, y: 6.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.2, y: 6.4}
+  m_EdgeRadius: 0
 --- !u!1 &1035039564
 GameObject:
   m_ObjectHideFlags: 0

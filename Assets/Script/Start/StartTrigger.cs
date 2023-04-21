@@ -8,6 +8,7 @@ public class StartTrigger : MonoBehaviour
 {
 
     public PlayableDirector playableDirector;
+    public List<GameObject> textList = new List<GameObject>();
 
     void Update()
     {
@@ -15,6 +16,10 @@ public class StartTrigger : MonoBehaviour
         {
             Debug.Log("Play intro");
             playableDirector.Play();
+            for (int i = 0; i < textList.Count; i++)
+            {
+                Destroy(textList[i]);
+            }
 
         }
 
