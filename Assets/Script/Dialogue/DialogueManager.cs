@@ -73,6 +73,7 @@ public class DialogueManager : MonoBehaviour
             {
                 isTextFormat = false;
                 textFormat += letter;
+                Debug.Log(textFormat);
                 dialogueText.text += textFormat;
                 textFormat = "";
                 continue;
