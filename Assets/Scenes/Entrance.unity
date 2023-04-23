@@ -304,11 +304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409691846752709225, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.993601
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 409691846752709225, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1568358
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: 409691846752709225, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -792,8 +792,8 @@ GameObject:
   - component: {fileID: 1029413121}
   - component: {fileID: 1029413120}
   - component: {fileID: 1029413119}
-  - component: {fileID: 1029413122}
   - component: {fileID: 1029413123}
+  - component: {fileID: 1029413124}
   m_Layer: 0
   m_Name: i-SecurityRoomDoor
   m_TagString: Untagged
@@ -832,7 +832,7 @@ MonoBehaviour:
   interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1029413122}
+      - m_Target: {fileID: 1029413124}
         m_TargetAssemblyTypeName: OnExitLevel, Assembly-CSharp
         m_MethodName: EnterScene
         m_Mode: 1
@@ -923,27 +923,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1029413122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029413117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ab561bd093c4e84a74e554271d96dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: SecurityRoom
-  isNextScene: 1
-  lockRoom: 0
-  objNeed: Key
-  dialogue:
-    name: 
-    sentences:
-    - No time to go back to this room!!!
-  sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!61 &1029413123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -970,6 +949,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.2, y: 6.4}
   m_EdgeRadius: 0
+--- !u!114 &1029413124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029413117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ab561bd093c4e84a74e554271d96dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  isNextScene: 1
+  lockRoom: 0
+  objNeed: Key
+  dialogue:
+    name: 
+    sentences:
+    - No time to go back to this room!
+  sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
+  testMode: 1
+  chance: 10
 --- !u!1 &1035039564
 GameObject:
   m_ObjectHideFlags: 0

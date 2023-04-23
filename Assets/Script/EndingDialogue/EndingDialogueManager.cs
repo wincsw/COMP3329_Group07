@@ -20,7 +20,10 @@ public class EndingDialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("endctrl " + endingControl);
+        endingControl.gameObject.SetActive(true);
         sentences = new Queue<string>();
+        Debug.Log("sentences " + sentences);
     }
 
     void Update()
@@ -31,12 +34,14 @@ public class EndingDialogueManager : MonoBehaviour
         }
         if (sentences.Count == 0 && Input.GetKeyDown("f"))
         {
+            Debug.Log("Restart Game from edm");
             endingControl.RestartGame();
         }
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        Debug.Log("dialogue " + dialogue);
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
         {

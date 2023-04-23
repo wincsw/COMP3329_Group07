@@ -1377,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: 1390024937298369861, guid: a0dd95d67256a4b6fb2c00c712287836, type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1907117702}
     - target: {fileID: 1390024937298369863, guid: a0dd95d67256a4b6fb2c00c712287836, type: 3}
       propertyPath: m_Name
       value: EventSystem
@@ -1702,6 +1702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1907117702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128904619, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 1907117699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1919389867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +1833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ab561bd093c4e84a74e554271d96dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Corridor
+  sceneName: Entrance
   isNextScene: 0
   lockRoom: 0
   objNeed: 
@@ -1836,6 +1841,8 @@ MonoBehaviour:
     name: 
     sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
+  testMode: 0
+  chance: 0
 --- !u!61 &1919389872
 BoxCollider2D:
   m_ObjectHideFlags: 0

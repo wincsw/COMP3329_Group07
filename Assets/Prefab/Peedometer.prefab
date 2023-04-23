@@ -103,7 +103,7 @@ RectTransform:
   m_GameObject: {fileID: 259549375930410846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2, y: 2.01, z: 0.5}
+  m_LocalScale: {x: 2.2, y: 2.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4553029385082360244}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -179,7 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c81509933fc48f59a6ac4453d470d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillSpeed: 0.1
+  slider: {fileID: 0}
+  sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
 --- !u!1 &259549375978566086
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8958871792247800696}
   - component: {fileID: 239925074830989946}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,8 +319,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666926266534241887}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -101.97077, y: 47.610973, z: 0}
-  m_LocalScale: {x: 0.45454547, y: 0.49751243, z: 0}
+  m_LocalPosition: {x: -115.06, y: 76.6, z: 0}
+  m_LocalScale: {x: 0.72, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 259549375978566085}
@@ -365,8 +366,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1975656467
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -389,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4553029385082360244}
   - component: {fileID: 2728072656460575300}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: peedometerStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 985343836857149583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -71.3, y: 1.1, z: 0}
-  m_LocalScale: {x: 100.8, y: 100.8, z: 100.8}
+  m_LocalScale: {x: 110, y: 110, z: 100.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259549375930410845}
@@ -449,9 +450,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1975656467
+  m_SortingLayer: 5
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: daf048af616b19e44b3cba0296ee030d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

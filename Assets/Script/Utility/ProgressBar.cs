@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProgressBar : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ProgressBar : MonoBehaviour
     private float targetProgress = 0;
 
     public static float value = 0;
+    public SceneInfo sceneInfo;
 
     private void Awake()
     {
@@ -22,6 +24,12 @@ public class ProgressBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "DreamChamber" && sceneInfo.lastScene == "Start")
+        {
+            Debug.Log("Restarted game and in progress bar");
+            ClearValue();
+            sceneInfo.lastScene = "DreamChamber";
+        }
         IncrementProgress(1);
     }
 
@@ -60,5 +68,6 @@ public class ProgressBar : MonoBehaviour
         slider.value = 0;
         ProgressBar.fillSpeed = 0.01f;
         FindObjectOfType<GameManager>().hasPeed = false;
+        Time.timeScale = 1;
     }
 }

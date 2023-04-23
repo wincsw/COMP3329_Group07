@@ -52,7 +52,12 @@ public class GameManager : MonoBehaviour
 
     public void EndCaught()
     {
-
+        if (!gameHasEnded)
+        {
+            gameHasEnded = true;
+            Debug.Log("GAME OVER: TRAPPED END");
+            SceneManager.LoadScene("EndingCaught");
+        }
     }
 
     public void Restart()
@@ -63,10 +68,16 @@ public class GameManager : MonoBehaviour
         {
             Destroy(musicObj);
         }
+        InventoryItem_Soap.collected = false;
+        InventoryItem_ToiletPaper.collected = false;
+        InventoryItem_Key.collected = false;
+        InventoryItem_Plunger.collected = false;
+        InventoryItem_Keycard.collected = false;
         hasPeed = false;
         gameHasEnded = false;
-        FindObjectOfType<ProgressBar>().ResetValue();
+        // FindObjectOfType<ProgressBar>().ResetValue();
         sceneInfo.lastPosition = new Vector2(46.5f, 5);
-        SceneManager.LoadScene("DreamChamber");
+        sceneInfo.lastScene = "Start";
+        SceneManager.LoadScene("Start");
     }
 }

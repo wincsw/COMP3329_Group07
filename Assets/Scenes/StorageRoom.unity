@@ -418,6 +418,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &217717816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128904619, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+  m_PrefabInstance: {fileID: 217717813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &287562967
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +583,8 @@ MonoBehaviour:
     name: 
     sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
+  testMode: 0
+  chance: 0
 --- !u!114 &287562975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3061,7 +3068,7 @@ PrefabInstance:
     - target: {fileID: 1390024937298369861, guid: a0dd95d67256a4b6fb2c00c712287836, type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 217717816}
     - target: {fileID: 1390024937298369863, guid: a0dd95d67256a4b6fb2c00c712287836, type: 3}
       propertyPath: m_Name
       value: EventSystem

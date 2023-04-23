@@ -12,6 +12,7 @@ public class OnExitLevel : MonoBehaviour
     public Dialogue dialogue;
     [SerializeField]
     public SceneInfo sceneInfo;
+    public int chance;
 
     public void EnterScene()
     {
@@ -52,6 +53,34 @@ public class OnExitLevel : MonoBehaviour
         {
             lockRoom = false;
         }
+        else if (SceneManager.GetActiveScene().name == "Entrance")
+        {
+
+            if (InventoryItem_Key.collected)
+            {
+                lockRoom = true;
+            }
+            else
+            {
+                chance = Random.Range(0,10);
+                if (chance <= 8)
+                {
+                    Debug.Log(chance + "Security Room");
+                    sceneInfo.lastScene = SceneManager.GetActiveScene().name;
+                    SceneManager.LoadScene("SecurityRoom");
+                    return;
+                }
+                else
+                {
+                    Debug.Log(chance + "Security Guard");
+                    FindObjectOfType<GameManager>().EndCaught();
+                    return;
+                }
+
+            }
+        
+
+        }
 
         if (lockRoom == true)
         {
@@ -61,11 +90,9 @@ public class OnExitLevel : MonoBehaviour
         else
         {
             Debug.Log("Entering " + sceneName);
+            sceneInfo.lastScene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(sceneName);
 
         }
-
-
-
     }
 }
