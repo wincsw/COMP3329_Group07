@@ -23,6 +23,8 @@ public class InventoryItem_Plunger : MonoBehaviour
         if (collected)
         {
             GetComponent<Renderer>().material = original_Material;
+            Debug.Log(GetComponent<Renderer>().material);
+
         }
 
     }

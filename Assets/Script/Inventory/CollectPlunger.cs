@@ -19,7 +19,6 @@ public class CollectPlunger : MonoBehaviour
     // can hv other trigger
     public void TriggerPickUp()
     {
-        Debug.Log("Collected Plunger");
         InventoryItem_Plunger.collected = true;
         Destroy(gameObject);
     }

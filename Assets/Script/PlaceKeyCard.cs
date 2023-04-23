@@ -12,13 +12,17 @@ public class PlaceKeyCard : MonoBehaviour
     public static float screenY;
     void Start()
     {
-        if (!(InventoryItem_Keycard.collected || placed))
+        if (!placed && !InventoryItem_Keycard.collected)
         {
             PlaceCard();
         }
         else if (InventoryItem_Keycard.collected)
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            gameObject.transform.position = new Vector3(screenX, screenY, 0);
         }
     }
 
