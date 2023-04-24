@@ -1092,6 +1092,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 102405050}
     m_Modifications:
+    - target: {fileID: 4052660128574762499, guid: cad44bc6b9ef37a4595d02f2c2eb5be6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4052660128574762500, guid: cad44bc6b9ef37a4595d02f2c2eb5be6, type: 3}
       propertyPath: m_Size.x
       value: 0.90275264
@@ -1841,7 +1845,6 @@ MonoBehaviour:
     name: 
     sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
-  testMode: 0
   chance: 0
 --- !u!61 &1919389872
 BoxCollider2D:

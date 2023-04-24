@@ -524,7 +524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Here is a beaker with some OIL.
+      value: You got <color="green"><b>OIL</b></color>
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
@@ -539,13 +539,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 445801747}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 530731797}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 445801749}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -555,20 +563,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TriggerPickUp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: IsSoapMade
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CollectItem_Soap, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SoapMake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -607,6 +623,17 @@ MonoBehaviour:
   isOil: 1
   isLye: 0
   soapItems: {fileID: 530731797}
+--- !u!114 &445801749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 445801743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445801745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &459340194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1211,6 @@ MonoBehaviour:
     name: 
     sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
-  testMode: 0
   chance: 0
 --- !u!61 &864117059
 BoxCollider2D:
@@ -1436,6 +1462,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1027941975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2039321259}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 2039321260}
+    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1345565247}
+    - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_Name
+      value: DialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12c654f97531a435d836d4b979035a08, type: 3}
 --- !u!1 &1068163282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,81 +2069,14 @@ MonoBehaviour:
   haveBeaker:
     name: 
     sentences:
-    - Now I can get some WATER.
+    - "Good Job! You\u2019ve turned <color=\"green\"><b>EMPTY BEAKER</b></color>
+      into\u2026 <color=\"green\"><b>WATER</b></color>"
+    - "\u2026Oh no this made you want to pee even more, find the toilet soon!"
   noBeaker:
     name: 
     sentences:
-    - I mush need something to hold the water.
+    - You need something to hold the <color="green"><b>WATER</b></color> with
   beaker: 0
---- !u!1001 &1199960795
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 2039321259}
-    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 2039321260}
-    - target: {fileID: 336165045735025988, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 1345565247}
-    - target: {fileID: 336165045735025989, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_Name
-      value: DialogueManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 336165045735025991, guid: 12c654f97531a435d836d4b979035a08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 12c654f97531a435d836d4b979035a08, type: 3}
 --- !u!95 &1345565247 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
@@ -2163,9 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: 'Here is an empty beaker.
-
-        I wonder what is it for?'
+      value: You got an <color="green"><b>EMPTY BEAKER</b></color>
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
@@ -2176,20 +2202,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1417596808}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1417596810}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TriggerPickUp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CollectItem_Soap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2224,6 +2262,17 @@ MonoBehaviour:
   isOil: 0
   isLye: 0
   soapItems: {fileID: 530731797}
+--- !u!114 &1417596810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 1417596805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417596807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452715288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,7 +2735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Here is some LYE in the beaker.
+      value: You got <color="green"><b>LYE</b></color>
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
@@ -2701,13 +2750,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1821117566}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 530731797}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1821117568}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -2717,20 +2770,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TriggerPickUp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: IsSoapMade
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CollectItem_Soap, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SoapMake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2769,6 +2830,17 @@ MonoBehaviour:
   isOil: 0
   isLye: 1
   soapItems: {fileID: 530731797}
+--- !u!114 &1821117568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
+  m_PrefabInstance: {fileID: 1821117562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821117564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897033630
 GameObject:
   m_ObjectHideFlags: 0

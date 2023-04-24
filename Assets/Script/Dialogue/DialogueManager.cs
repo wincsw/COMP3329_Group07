@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("Display next");
+        // Debug.Log("Display next");
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -73,7 +73,7 @@ public class DialogueManager : MonoBehaviour
             {
                 isTextFormat = false;
                 textFormat += letter;
-                Debug.Log(textFormat);
+                // Debug.Log(textFormat);
                 dialogueText.text += textFormat;
                 textFormat = "";
                 continue;
@@ -95,7 +95,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isActive = false;
-        Debug.Log("isActive: " + isActive);
+        // Debug.Log("isActive: " + isActive);
 
         Debug.Log("End reading");
         animator.SetBool("IsOpen", false);

@@ -1069,43 +1069,35 @@ MonoBehaviour:
   dialogueWithoutWeapon:
     name: 
     sentences:
-    - <color=#008B8B>"Hey!!!"</color>
-    - Wait? Who is talking?
-    - '"Human look down, I''m on the table."'
-    - 'What is happening?
-
-      Why is there a talking robot?
-
-      And why there
-      a toilet paper roll under you?'
-    - "\"This toilet paper is my baby! \nIf you want it you need to wallk pass my
-      dead body!\""
-    - Ok..... this is weird....
+    - <color=#008B8B><i>"Hello Human"</i></color>
+    - "Wait\u2026 Who just spoke?"
+    - "<color=#008B8B><i>\"Stupid human, look down! \nI\u2019m on the table.\"</i></color>"
+    - "\u201CWaaa\u2026 what is going on? A talking robot?\" "
+    - <color=#008B8B><i>"Stating the obvious, I see!"</i></color>
+    - "\u2026Wait"
+    - '"Why is there toilet paper roll under you?"'
+    - "<color=#008B8B><i>\"This toilet paper is my baby!\nYou\u2019ll never have
+      it as long as my I am alive and functioning\" </i></color>"
+    - "Ok\u2026 this is weird\u2026"
   dialogueWithWeapon:
     name: 
     sentences:
-    - '"Human! What is in your hand?"'
-    - 'A knife?
-
-      To be honest I am not sure too.
-
-      I just got it from
-      the 3D printer.'
-    - '"It is a weapon!
-
-      You have defeated me.
-
-      Here the toliet paper."'
-    - 'Ok? Thanks?
-
-      *Am I losing my sanity?*'
+    - "<color=#008B8B><i>\u201CHuman! What is in your hand?\"</i></color>"
+    - "\u201CA\u2026 knife?\""
+    - '"To be honest I am not sure either. I just got it from the 3D printer."'
+    - "<color=#008B8B><i>\u201CA weapon? How could this happen?\" \nThose 3D printers
+      want me dead!\nAlright you have won, here\u2019s the toilet paper\"</i></color>"
+    - "<color=#008B8B><i>\u201CA weapon? How could this happen?\" \nThose 3D printers
+      want me dead!\nAlright you have won, here\u2019s the toilet paper\"</i></color>"
+    - "\u201COk? Thanks?\""
+    - Am I losing my sanity?
   dialogueDefeated:
     name: 
     sentences:
-    - '"You have already defeated me
+    - '<color=#008B8B><i>"You have already defeated me
 
-      I have nothing to give you now ypu greedy
-      human."'
+      I have nothing to give
+      you now you greedy human." </i></color>'
   defeat: 0
   weapon: 0
 --- !u!1001 &903500391
@@ -1400,14 +1392,16 @@ MonoBehaviour:
   dialogueWithObj:
     name: 
     sentences:
-    - I already have printed something, let's not waste the resource.
+    - "As much as you want to 3D print the hygienic items needed, you\u2019re not
+      a 3D printing wizard. "
+    - Even if you were, it will take too long.
   dialogueWithoutObj:
     name: 
     sentences:
-    - 'Oh here are some 3D printers and a program to print a weapon.
+    - "The 3D printer seems to be printing something\u2026"
+    - 'Finders keepers!
 
-      Let''s
-      print one!'
+      You now have a new object to use.'
   weapon: 0
 --- !u!114 &1024823848
 MonoBehaviour:
@@ -2256,13 +2250,16 @@ MonoBehaviour:
   dialogueWithObj:
     name: 
     sentences:
-    - I already have printed something, let's not waste the resource.
+    - "As much as you want to 3D print the hygienic items needed, you\u2019re not
+      a 3D printing wizard. "
+    - Even if you were, it will take too long.
   dialogueWithoutObj:
     name: 
     sentences:
-    - 'The 3D printers seems to be printing somthing.
+    - "The 3D printer seems to be printing something\u2026"
+    - 'Finders keepers!
 
-      Finders keeper~'
+      You now have a new object to use.'
   weapon: 0
 --- !u!1 &1761284161
 GameObject:
@@ -2434,14 +2431,16 @@ MonoBehaviour:
   dialogueWithObj:
     name: 
     sentences:
-    - I already have printed something, let's not waste the resource.
+    - "As much as you want to 3D print the hygienic items needed, you\u2019re not
+      a 3D printing wizard. "
+    - Even if you were, it will take too long.
   dialogueWithoutObj:
     name: 
     sentences:
-    - 'Oh here are some 3D printers and a program to print a weapon.
+    - "The 3D printer seems to be printing something\u2026"
+    - 'Finders keepers!
 
-      Let''s
-      print one!'
+      You now have a new object to use.'
   weapon: 0
 --- !u!114 &1761284168
 MonoBehaviour:
