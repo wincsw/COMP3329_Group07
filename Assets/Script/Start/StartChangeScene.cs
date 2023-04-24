@@ -14,6 +14,7 @@ public class StartChangeScene : MonoBehaviour
     {
         Debug.Log("Entering DreamChamber");
         SceneManager.LoadScene("DreamChamber");
+        sceneInfo.lastPosition = new Vector2(47.5f, 5f);
 
     }
 }

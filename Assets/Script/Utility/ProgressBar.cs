@@ -27,7 +27,7 @@ public class ProgressBar : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "DreamChamber" && sceneInfo.lastScene == "Start")
         {
             Debug.Log("Restarted game and in progress bar");
-            ClearValue();
+            ResetValue();
             sceneInfo.lastScene = "DreamChamber";
         }
         IncrementProgress(1);

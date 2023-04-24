@@ -20,10 +20,31 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
+
+    public void DestroyMusic()
+    {
+        GameObject[] alarmObj = GameObject.FindGameObjectsWithTag("Alarm");
+        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
+        GameObject[] overlayObj = GameObject.FindGameObjectsWithTag("Overlay");
+        foreach (GameObject alarm in alarmObj)
+        {
+            Destroy(alarm);
+        }
+        foreach (GameObject music in musicObj)
+        {
+            Destroy(music);
+        }
+        foreach (GameObject overlay in overlayObj)
+        {
+            Destroy(overlay);
+        }
+        
+    }
     public void EndPeed()
     {
         if (!gameHasEnded)
         {
+            DestroyMusic();
             gameHasEnded = true;
             Debug.Log("GAME OVER: PEED END");
             SceneManager.LoadScene("EndingPeed");
@@ -34,6 +55,7 @@ public class GameManager : MonoBehaviour
     {
         if (!gameHasEnded)
         {
+            DestroyMusic();
             gameHasEnded = true;
             Debug.Log("GAME OVER: GOOD END");
             SceneManager.LoadScene("EndingGood");
@@ -44,6 +66,7 @@ public class GameManager : MonoBehaviour
     {
         if (!gameHasEnded)
         {
+            DestroyMusic();
             gameHasEnded = true;
             Debug.Log("GAME OVER: TRAPPED END");
             SceneManager.LoadScene("EndingTrapped");
@@ -54,6 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if (!gameHasEnded)
         {
+            DestroyMusic();
             gameHasEnded = true;
             Debug.Log("GAME OVER: TRAPPED END");
             SceneManager.LoadScene("EndingCaught");
