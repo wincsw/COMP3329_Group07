@@ -12,7 +12,7 @@ public class EntranceGateControl : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         }
-        else if (InventoryItem_Key.collected)
+        else if (InventoryItem_Keycard.collected)
         {
             FindObjectOfType<GameManager>().EndGood();
         }
