@@ -1319,7 +1319,6 @@ MonoBehaviour:
     name: 
     sentences: []
   sceneInfo: {fileID: 11400000, guid: 824add7353cd14d4d9edca9e4d99c1a8, type: 2}
-  testMode: 0
   chance: 0
 --- !u!114 &654290450
 MonoBehaviour:
@@ -2319,7 +2318,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1422236924}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
+  m_PlayableAsset: {fileID: 0}
   m_InitialState: 0
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
@@ -2346,6 +2345,8 @@ PlayableDirector:
   - key: {fileID: -5784192511454109885, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
     value: {fileID: 0}
   - key: {fileID: 5656674471166606134, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 25441536128460346, guid: 42519a1238ea0ec43b0f84d9e4d85b28, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
