@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &85607117
 Transform:
   m_ObjectHideFlags: 0
@@ -430,19 +430,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Brought to you by \n<b>GROUP 07</b>\n\n\n<u><b>ANIMATION / GRAPHICS</b></u>\n\nMain
-    Character     Ione Win Chim\nSupporting Role       Mr S. Guard\n\n\n\n<u><b>DEVELOPMENT</b></u>\n\nSze
-    Wing Chan \n\nChing Yu Tsang \n\n\n\n<u><b>CAST</b></u>\n\n Isabella Dolcetta
-    Capuzzo\n\nRaphaele Michelle Guillemot \n\n\n\n<u><b>SCRIPT WRITER</b></u>\n\ncollaboration
-    of 4 minds\n\n\n\n<u><b>CREATIVE DIRECTOR</b></u>\n\nChing Yu Tsang \n\n\n\n\n\n\n\n<u><b>PRODUCER</b></u>\n\nIone
-    Win Chim\n(with the help of 4 group members)\n\n\n\n\n<u><b>MARKETING</b></u>\n\nRaphaele
+  m_text: "Brought to you by \n<b>GROUP 07</b>\n\n\n<u><b>CAST</b></u>\n\nMain Character    
+    Ione Win Chim\nSupporting Role       Mr S. Guard\n\n\n\n<u><b>DEVELOPMENT</b></u>\n\nSze
+    Wing Chan \n\nChing Yu Tsang \n\n\n\n<u><b>ANIMATION & GRAPHICS</b></u>\n\n Isabella
+    Dolcetta Capuzzo\n\nRaphaele Michelle Guillemot \n\n\n\n<u><b>SCRIPT WRITER</b></u>\n\ncollaboration
+    of 4 minds\n\n\n\n<u><b>CREATIVE DIRECTOR</b></u>\n\nChing Yu Tsang \n\n\n\n<u><b>PRODUCER</b></u>\n\nIone
+    Win Chim\n(with the help of 4 group members)\n\n\n\n<u><b>MARKETING</b></u>\n\nRaphaele
     Michelle Guillemot \n\n Isabella Dolcetta Capuzzo\n\n\n\n\n\n\nin collaboration
     with:\n\n<b>InnoWing \n&\nComputer game design \nand programming </b>\n\n\n\n\n\n<u><b>a
     special thanks to:</u></b>\nMain Library Discussion Rooms, \nPiskel & MediBang
-    Paint\n\n\n\nHope you enjoy our game!"
+    Paint\n\n\n\nHope you enjoyed our game!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 41c1559f419924ccdaaec36d65f8d856, type: 2}
-  m_sharedMaterial: {fileID: -3611716029612712361, guid: 41c1559f419924ccdaaec36d65f8d856, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2c8e0d536846a4bdbad1cd48fa005c92, type: 2}
+  m_sharedMaterial: {fileID: 4373405080304718710, guid: 2c8e0d536846a4bdbad1cd48fa005c92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -466,8 +466,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 82
-  m_fontSizeBase: 82
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: 30
   m_lineSpacing: 30
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -630,7 +630,7 @@ RectTransform:
   m_Children:
   - {fileID: 747860137}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -653,7 +653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &397369041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: 385}
+  m_AnchoredPosition: {x: 21, y: 329}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747860138
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congratulations, You Won!!!
+  m_text: "Congratulations, \nYou Won!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41c1559f419924ccdaaec36d65f8d856, type: 2}
   m_sharedMaterial: {fileID: -3611716029612712361, guid: 41c1559f419924ccdaaec36d65f8d856, type: 2}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 30
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.53333336}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.53333336}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1457,7 +1457,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1521,7 +1521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1182953842
 Transform:
   m_ObjectHideFlags: 0
@@ -1605,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1423280097
 Transform:
   m_ObjectHideFlags: 0
@@ -1723,6 +1723,8 @@ PlayableDirector:
     value: {fileID: 1020239090}
   - key: {fileID: -721964409515241134, guid: 997e166e9141349988a199a765240905, type: 2}
     value: {fileID: 304163275}
+  - key: {fileID: 7186456394508712079, guid: 997e166e9141349988a199a765240905, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - f854f8f23edfd459881f8303fd26dc77: {fileID: 192616552}
@@ -1739,7 +1741,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1809552918
 GameObject:
@@ -1807,7 +1809,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1976670572
 GameObject:
@@ -1903,7 +1905,7 @@ RectTransform:
   m_Children:
   - {fileID: 767357637}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2004,7 +2006,7 @@ RectTransform:
   m_Children:
   - {fileID: 892954062}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

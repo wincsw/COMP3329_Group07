@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912301672224449348, guid: e3e2e87138eeb4585bfd9c86ed6b6437, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "Time to face the consequences and answer some questions, it\u2019s
+      value: "Time to face the consequences and answer some questions, \n\nit\u2019s
         not looking good for you my friend."
       objectReference: {fileID: 0}
     - target: {fileID: 2912301672224449349, guid: e3e2e87138eeb4585bfd9c86ed6b6437, type: 3}
@@ -224,6 +224,18 @@ PrefabInstance:
     - target: {fileID: 470620780523389601, guid: 64ff9048b97fb4569a06b7753272e1a8, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 470620780523389601, guid: 64ff9048b97fb4569a06b7753272e1a8, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 470620780523389630, guid: 64ff9048b97fb4569a06b7753272e1a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470620780523389630, guid: 64ff9048b97fb4569a06b7753272e1a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -164
       objectReference: {fileID: 0}
     - target: {fileID: 470620780821294408, guid: 64ff9048b97fb4569a06b7753272e1a8, type: 3}
       propertyPath: m_Name
@@ -502,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 41
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -9,7 +9,7 @@ public class DialogueTrigger_BreadFish : MonoBehaviour
     public Dialogue dialogueDefeated;
     public bool defeat;
     public bool weapon;
-
+    public GameObject toiletRoll;
 
     public void TriggerDialogue()
     {
@@ -38,6 +38,7 @@ public class DialogueTrigger_BreadFish : MonoBehaviour
             Debug.Log("Dialogue with weapon Triggered");
             FindObjectOfType<DialogueManager>().StartDialogue(dialogueWithWeapon);
             defeat = GetComponent<FightBreadFish>().defeat;
+            Destroy(toiletRoll);
         }
         else
         {

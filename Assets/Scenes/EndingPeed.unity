@@ -315,9 +315,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
+      propertyPath: m_text
+      value: 'What the text looks like
+
+        What the text looks like
+
+        What
+        the text looks like'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336633, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 296
+      value: 278
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
@@ -444,8 +461,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1551128769137445640, guid: 2fbc418e0ca2641bdb6a5546f85f52a0, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "The guards find you in the morning, not only do you smell bad but you\u2019re
-        now also in big trouble."
+      value: "The guards find you in the morning, \nnot only do you smell bad but
+        you\u2019re now also in big trouble."
       objectReference: {fileID: 0}
     - target: {fileID: 1551128769137445641, guid: 2fbc418e0ca2641bdb6a5546f85f52a0, type: 3}
       propertyPath: m_RootOrder
@@ -589,7 +606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 451
+      value: 376
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

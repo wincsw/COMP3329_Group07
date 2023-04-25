@@ -220,11 +220,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5228868947602740064, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -432
+      value: -407
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228868947602740066, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
+      propertyPath: m_margin.x
+      value: -540.29297
       objectReference: {fileID: 0}
     - target: {fileID: 5228868947602740066, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_margin.z
       value: -361.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228868947602740066, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5228868947602740069, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_IsActive
@@ -332,15 +340,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_margin.w
-      value: -241.62906
+      value: -216.41858
       objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_margin.x
-      value: -662.31793
+      value: -611.8969
       objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336614, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_margin.z
-      value: -100.85849
+      value: -35.311142
       objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336632, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_IsActive
@@ -352,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5228868948461336633, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59
+      value: -120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ede66e31d3d54217b1d08f3ad81c8a5, type: 3}
@@ -1286,8 +1294,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "Oh oh you\u2019ve been CAUGHT\u2026 The security guard was in the room
-        just waiting for your final mistake."
+      value: "Oh oh you\u2019ve been CAUGHT\u2026 \nThe security guard was in the
+        room just waiting for your final mistake."
       objectReference: {fileID: 0}
     - target: {fileID: 2082779784663189698, guid: 7855b640bf32e455e8119b6b2a64df9b, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
@@ -1432,7 +1440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 451
+      value: 385
       objectReference: {fileID: 0}
     - target: {fileID: 6143040349489471463, guid: a83dad80a2b1e4edcb18cf4ea65d7c63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
