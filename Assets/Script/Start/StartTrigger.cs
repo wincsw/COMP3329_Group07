@@ -10,19 +10,18 @@ public class StartTrigger : MonoBehaviour
     public PlayableDirector playableDirector;
     public List<GameObject> textList = new List<GameObject>();
 
+    public GameObject canvas;
+    public AudioSource startMusic;
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Play intro");
             playableDirector.Play();
-            for (int i = 0; i < textList.Count; i++)
-            {
-                Destroy(textList[i]);
-            }
-
+            startMusic.Stop();
         }
-
 
     }
 }
