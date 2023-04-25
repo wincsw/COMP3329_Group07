@@ -8,8 +8,9 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider slider;
 
+    public const float SPEED = 0.003f;
 
-    public static float fillSpeed = 0.003f;
+    public static float fillSpeed = SPEED;
     private float targetProgress = 0;
 
     public static float value = 0;
@@ -66,7 +67,7 @@ public class ProgressBar : MonoBehaviour
     {
         ProgressBar.value = 0;
         slider.value = 0;
-        ProgressBar.fillSpeed = 0.01f;
+        ProgressBar.fillSpeed = SPEED;
         FindObjectOfType<GameManager>().hasPeed = false;
         Time.timeScale = 1;
     }
