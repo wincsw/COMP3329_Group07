@@ -10,7 +10,7 @@ public class EndingControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(endingDialogueManager);
+        // Debug.Log(endingDialogueManager);
         endingDialogueManager.StartDialogue(dialogue);
         // Destroy(GameObject.FindGameObjectWithTag("GameMusic"));
     }

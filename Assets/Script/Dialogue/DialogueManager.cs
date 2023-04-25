@@ -15,7 +15,10 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed;
 
     private Queue<string> sentences;
-    public bool isActive;
+    public bool isActive = false;
+
+    public int sentenceCount = 0;
+
 
 
 
@@ -28,7 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if (!FindObjectOfType<PlayerMovement>().enabled && Input.GetKeyDown("space"))
+        if (sentenceCount > 0 && !FindObjectOfType<PlayerMovement>().enabled && Input.GetKeyDown("space"))
         {
             DisplayNextSentence();
         }
@@ -57,7 +60,6 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -91,6 +93,7 @@ public class DialogueManager : MonoBehaviour
             }
             yield return new WaitForSeconds(typingSpeed);
         }
+        sentenceCount++;
     }
     void EndDialogue()
     {

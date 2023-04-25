@@ -15,24 +15,27 @@ public class EndingDialogueManager : MonoBehaviour
     public float pauseSecond;
     private Queue<string> sentences;
 
+    public int sentenceCount = 0;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("endctrl " + endingControl);
+        sentenceCount = 0;
+        // Debug.Log("endctrl " + endingControl);
         endingControl.gameObject.SetActive(true);
         sentences = new Queue<string>();
-        Debug.Log("sentences " + sentences);
+        // Debug.Log("sentences " + sentences);
     }
 
     void Update()
     {
-        if(sentences.Count != 0 && Input.GetKeyDown("space"))
+        if(sentenceCount > 0 && sentences.Count != 0 && Input.GetKeyDown("space"))
         {
             DisplayNextSentence();
         }
-        if (sentences.Count == 0 && Input.GetKeyDown("f"))
+        if (sentenceCount > 0 && sentences.Count == 0 && Input.GetKeyDown("f"))
         {
             Debug.Log("Restart Game from edm");
             endingControl.RestartGame();
@@ -41,7 +44,7 @@ public class EndingDialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("dialogue " + dialogue);
+        // Debug.Log("dialogue " + dialogue);
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
         {
@@ -101,6 +104,8 @@ public class EndingDialogueManager : MonoBehaviour
             yield return new WaitForSeconds(pauseSecond);
             instructionText.text = "► Press F to replay";
         }
+        sentenceCount++;
+        Debug.Log("sentenceCount "+ sentenceCount);
         
     }
     void EndDialogue()

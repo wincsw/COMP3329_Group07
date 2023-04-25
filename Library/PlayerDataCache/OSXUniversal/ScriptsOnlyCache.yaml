@@ -96,10 +96,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1254,11 +1252,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1566}
-    - Class: 114
       Script: {instanceID: 1568}
-    - Class: 114
-      Script: {instanceID: 1760}
     - Class: 114
       Script: {instanceID: 2300}
     - Class: 114
@@ -1273,8 +1267,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4526}
     - Class: 114
       Script: {instanceID: 4572}
-    - Class: 114
-      Script: {instanceID: 4764}
     - Class: 114
       Script: {instanceID: 4882}
     - Class: 114
@@ -1291,8 +1283,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7714}
     - Class: 114
       Script: {instanceID: 8196}
-    - Class: 114
-      Script: {instanceID: 8868}
     - Class: 114
       Script: {instanceID: 8952}
     - Class: 115
@@ -1934,7 +1924,7 @@ ScriptsOnlyBuild:
     className: UnityOnScrollMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 491d42c10622d6c835f41df97a19a94c
+      Hash: 28ea301a6cc6805c72e912375294ffc2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartTrigger
@@ -2372,7 +2362,7 @@ ScriptsOnlyBuild:
     className: InventoryItem_Soap
   - hash:
       serializedVersion: 2
-      Hash: 212f77d93721c0b5a0ed6dc4d6c24382
+      Hash: 87b24e16294aac17d393323d180716bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueManager
@@ -2582,7 +2572,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: ca1b2476a09b728792425239de5c4ab7
+      Hash: ebcf0b7129541f1a6bc31346115b4461
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartChangeScene
@@ -2768,7 +2758,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 3c467b46d274119474055d33101b0b25
+      Hash: 77f1dbc2fe0729f5a78d35e23950b919
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EndingDialogueManager
