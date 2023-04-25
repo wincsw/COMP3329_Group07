@@ -56,20 +56,13 @@ ScriptsOnlyBuild:
     Unity.2D.Sprite.Editor.dll:
     - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
-    Unity.2D.Tilemap.Extras.Editor.dll:
-    - UnityEditor.Tilemaps.GameObjectBrush
-    - UnityEditor.Tilemaps.GroupBrush
-    - UnityEditor.Tilemaps.LineBrush
-    - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -1254,6 +1247,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
+      Script: {instanceID: 1760}
+    - Class: 114
       Script: {instanceID: 2300}
     - Class: 114
       Script: {instanceID: 2810}
@@ -1267,6 +1262,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4526}
     - Class: 114
       Script: {instanceID: 4572}
+    - Class: 114
+      Script: {instanceID: 4764}
     - Class: 114
       Script: {instanceID: 4882}
     - Class: 114

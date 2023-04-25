@@ -22,6 +22,10 @@ public class StartTrigger : MonoBehaviour
             playableDirector.Play();
             startMusic.Stop();
         }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 
     }
 }

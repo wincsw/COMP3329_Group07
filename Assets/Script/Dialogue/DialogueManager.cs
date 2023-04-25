@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        sentenceCount = 0;
         isActive = true;
         Debug.Log("isActive: " + isActive);
         playerAnimator.SetFloat("Speed", 0f);

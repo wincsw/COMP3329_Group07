@@ -45,6 +45,7 @@ public class EndingDialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         // Debug.Log("dialogue " + dialogue);
+        sentenceCount = 0;
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
         {
