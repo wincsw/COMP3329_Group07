@@ -8,7 +8,8 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider slider;
 
-    public const float SPEED = 0.003f;
+    public const float MINUTES = 3.5f;
+    public const float SPEED = 1f / (MINUTES * 60);
 
     public static float fillSpeed = SPEED;
     private float targetProgress = 0;
@@ -29,7 +30,6 @@ public class ProgressBar : MonoBehaviour
         {
             Debug.Log("Restarted game and in progress bar");
             ResetValue();
-            sceneInfo.lastScene = "DreamChamber";
         }
         IncrementProgress(1);
     }

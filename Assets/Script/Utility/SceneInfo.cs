@@ -7,7 +7,6 @@ public class SceneInfo : ScriptableObject
 {
     public bool isNextScene = true;
     public Vector2 lastPosition;
-
     public string lastScene;
 
     void onEnable()

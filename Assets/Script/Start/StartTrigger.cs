@@ -17,12 +17,16 @@ public class StartTrigger : MonoBehaviour
     float lastSpawnTime;
     public GameObject toiletPaper;
     bool pressedStart = false;
+    public SceneInfo sceneInfo;
+
 
     void Start()
     {
         Cursor.visible = false;
         startTime = Time.time + FIRSTWAITTIME;
         lastSpawnTime = startTime;
+        sceneInfo.lastScene = "Start";
+        sceneInfo.lastPosition = new Vector2(47.5f, 5f);
     }
 
     void Update()

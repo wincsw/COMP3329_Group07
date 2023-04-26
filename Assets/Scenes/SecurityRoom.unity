@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 213062527}
   - component: {fileID: 213062529}
   - component: {fileID: 213062528}
+  - component: {fileID: 213062530}
   m_Layer: 0
   m_Name: Bin
   m_TagString: Untagged
@@ -362,7 +363,19 @@ MonoBehaviour:
   isInRange: 0
   interactAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 213062530}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inCoolDown: 0
 --- !u!60 &213062528
 PolygonCollider2D:
@@ -438,6 +451,22 @@ PolygonCollider2D:
       - {x: 0.17, y: -0.22999999}
       - {x: 0.21, y: -0.19}
       - {x: 0.24, y: -0.11}
+--- !u!114 &213062530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213062524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Just some tissue paper and leftovers.
 --- !u!1 &540168262
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +604,8 @@ GameObject:
   - component: {fileID: 841532499}
   - component: {fileID: 841532500}
   - component: {fileID: 841532502}
-  - component: {fileID: 841532501}
+  - component: {fileID: 841532504}
+  - component: {fileID: 841532503}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -665,69 +695,20 @@ MonoBehaviour:
   isInRange: 0
   interactAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841532503}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inCoolDown: 0
---- !u!60 &841532501
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841532497}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.74, y: 1.66}
-    newSize: {x: 1.74, y: 1.66}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.26999998, y: 0.83}
-      - {x: 0.22999999, y: 0.78999996}
-      - {x: 0.21440907, y: 0.5475651}
-      - {x: -0.34719798, y: -0.15344726}
-      - {x: -0.84, y: -0.16}
-      - {x: -0.87, y: -0.19}
-      - {x: -0.87, y: -0.81}
-      - {x: -0.84999996, y: -0.83}
-      - {x: 0.87, y: -0.83}
-      - {x: 0.87, y: 0.81}
-      - {x: 0.84999996, y: 0.83}
-    - - {x: -0.11, y: -0.14999999}
-      - {x: 0.07, y: -0.14999999}
-      - {x: 0.099999994, y: -0.14}
-      - {x: 0.17999999, y: -0.06}
-      - {x: 0.21, y: -0.01}
-      - {x: 0.21, y: 0.51}
-      - {x: 0.17999999, y: 0.56}
-      - {x: 0.08, y: 0.65}
-      - {x: -0.11, y: 0.65}
-      - {x: -0.14, y: 0.64}
-      - {x: -0.25, y: 0.53999996}
-      - {x: -0.31, y: 0.45999998}
-      - {x: -0.29999998, y: 0.59999996}
-      - {x: -0.34, y: 0.64}
-      - {x: -0.37, y: 0.65}
-      - {x: -0.42999998, y: 0.65}
-      - {x: -0.48, y: 0.59999996}
-      - {x: -0.51, y: 0.55}
-      - {x: -0.51, y: -0.049999997}
-      - {x: -0.48, y: -0.099999994}
-      - {x: -0.42, y: -0.14999999}
-      - {x: -0.35, y: -0.14999999}
-      - {x: -0.29999998, y: -0.099999994}
-      - {x: -0.25, y: -0.02}
-      - {x: -0.17999999, y: -0.099999994}
 --- !u!60 &841532502
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -764,6 +745,87 @@ PolygonCollider2D:
       - {x: 0.87, y: -0.83}
       - {x: 0.87, y: 0.81}
       - {x: 0.84999996, y: 0.83}
+    - - {x: -0.11, y: -0.14999999}
+      - {x: 0.07, y: -0.14999999}
+      - {x: 0.099999994, y: -0.14}
+      - {x: 0.17999999, y: -0.06}
+      - {x: 0.21, y: -0.01}
+      - {x: 0.21, y: 0.51}
+      - {x: 0.17999999, y: 0.56}
+      - {x: 0.08, y: 0.65}
+      - {x: -0.11, y: 0.65}
+      - {x: -0.14, y: 0.64}
+      - {x: -0.25, y: 0.53999996}
+      - {x: -0.31, y: 0.45999998}
+      - {x: -0.29999998, y: 0.59999996}
+      - {x: -0.34, y: 0.64}
+      - {x: -0.37, y: 0.65}
+      - {x: -0.42999998, y: 0.65}
+      - {x: -0.48, y: 0.59999996}
+      - {x: -0.51, y: 0.55}
+      - {x: -0.51, y: -0.049999997}
+      - {x: -0.48, y: -0.099999994}
+      - {x: -0.42, y: -0.14999999}
+      - {x: -0.35, y: -0.14999999}
+      - {x: -0.29999998, y: -0.099999994}
+      - {x: -0.25, y: -0.02}
+      - {x: -0.17999999, y: -0.099999994}
+--- !u!114 &841532503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841532497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Don''t press the button
+
+      Don''t press the button
+
+      Don''t press
+      the button'
+    - Ok i didn't press the button.
+--- !u!60 &841532504
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841532497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.74, y: 1.66}
+    newSize: {x: 1.74, y: 1.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5417448, y: 0.7756511}
+      - {x: 0.25038093, y: 0.7560318}
+      - {x: -0.84, y: -0.16}
+      - {x: -0.87, y: -0.19}
+      - {x: -0.87, y: -0.81}
+      - {x: -0.84999996, y: -0.83}
+      - {x: 0.87, y: -0.83}
+      - {x: 0.8767937, y: 0.721683}
+      - {x: 0.795651, y: 0.7688573}
     - - {x: -0.11, y: -0.14999999}
       - {x: 0.07, y: -0.14999999}
       - {x: 0.099999994, y: -0.14}
@@ -916,6 +978,9 @@ GameObject:
   - component: {fileID: 1112132508}
   - component: {fileID: 1112132509}
   - component: {fileID: 1112132510}
+  - component: {fileID: 1112132513}
+  - component: {fileID: 1112132512}
+  - component: {fileID: 1112132511}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -1001,6 +1066,78 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.44, y: 2.2}
+    newSize: {x: 5.44, y: 2.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.44, y: 2.2}
+  m_EdgeRadius: 0
+--- !u!114 &1112132511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112132507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Full of CCTV screens...
+    - Wait... is that me?
+--- !u!114 &1112132512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112132507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d5268b6d86140fbba6cf59332973c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRange: 0
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1112132511}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  inCoolDown: 0
+--- !u!61 &1112132513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112132507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1972,6 +2109,7 @@ GameObject:
   - component: {fileID: 2089089148}
   - component: {fileID: 2089089147}
   - component: {fileID: 2089089146}
+  - component: {fileID: 2089089149}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -2061,7 +2199,19 @@ MonoBehaviour:
   isInRange: 0
   interactAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2089089149}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inCoolDown: 0
 --- !u!61 &2089089147
 BoxCollider2D:
@@ -2115,3 +2265,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 1.72}
   m_EdgeRadius: 0
+--- !u!114 &2089089149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089089143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7d4d1b5e02e4c67827b8c47f2d5772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Great! Let's sit down and watch...
+    - <i>Dream_Chamber_2023-02-14_14:00</i>..
+    - Or <i>3D_Printing_Area_2023-03-25_09:00</i> sounds fun as well.
