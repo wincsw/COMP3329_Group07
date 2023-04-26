@@ -58,6 +58,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -69,10 +71,12 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
     - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
@@ -103,6 +107,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Slider
   serializedClasses:
     Assembly-CSharp:
@@ -701,6 +706,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
+      Script: {instanceID: 1760}
+    - Class: 114
       Script: {instanceID: 2118}
     - Class: 114
       Script: {instanceID: 2786}
@@ -708,6 +715,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2810}
     - Class: 114
       Script: {instanceID: 4130}
+    - Class: 114
+      Script: {instanceID: 4764}
     - Class: 114
       Script: {instanceID: 5294}
     - Class: 114
@@ -721,6 +730,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9018}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -843,7 +854,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
+      Script: {instanceID: 1760}
+    - Class: 114
       Script: {instanceID: 2118}
+    - Class: 114
+      Script: {instanceID: 4764}
     - Class: 114
       Script: {instanceID: 5716}
     - Class: 114
@@ -853,6 +868,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9018}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1250,6 +1267,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
+      Script: {instanceID: 1760}
+    - Class: 114
       Script: {instanceID: 2300}
     - Class: 114
       Script: {instanceID: 2810}
@@ -1263,6 +1282,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4526}
     - Class: 114
       Script: {instanceID: 4572}
+    - Class: 114
+      Script: {instanceID: 4764}
     - Class: 114
       Script: {instanceID: 4882}
     - Class: 114
