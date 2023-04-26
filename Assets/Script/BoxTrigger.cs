@@ -6,7 +6,8 @@ public class BoxTrigger : MonoBehaviour
 {
     public int shakeTimes;
     public ShakeCamera shakeCamera;
-    public Animator animator;
+    public Animator plungerAnimator;
+    public Animator boxesAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,8 @@ public class BoxTrigger : MonoBehaviour
         }
         if (shakeTimes == 3)
         {
-            animator.Play("dropPlunger");
+            plungerAnimator.Play("dropPlunger");
+            boxesAnimator.Play("moveBoxes");
         }
     }
 
