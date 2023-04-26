@@ -525,7 +525,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4244635647
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -915,6 +915,51 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 409691846752709220, guid: 5f5a7a0360efe422fa3a2ff0c70e758d, type: 3}
   m_PrefabInstance: {fileID: 451742397}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &461633185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461633187}
+  - component: {fileID: 461633186}
+  m_Layer: 0
+  m_Name: PlayerAnimationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &461633186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461633185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802c2291d55ec4ab59e34c4abd8ae427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 451742398}
+--- !u!4 &461633187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461633185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.296069, y: -2.22685, z: 0.13287231}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480058323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,7 +2262,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1728053247
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2424,7 +2469,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 3c2c0469058054e619a04e5e2265a49d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3254902}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2609,6 +2654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1713946012}
+  DebugMode: 0
   KeyObj: {fileID: 0}
   PlungerObj: {fileID: 0}
   ToiletPaperObj: {fileID: 0}
@@ -2876,8 +2922,6 @@ PlayableDirector:
     value: {fileID: 999869406}
   - key: {fileID: -1084394097627295532, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
     value: {fileID: 999869407}
-  - key: {fileID: -6276472079211951868, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
-    value: {fileID: 451742398}
   - key: {fileID: 7948477141846243044, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
     value: {fileID: 1173684252}
   - key: {fileID: 4483684579957189032, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
@@ -2892,9 +2936,12 @@ PlayableDirector:
     value: {fileID: 292429175}
   - key: {fileID: 1566923546761098775, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
     value: {fileID: 983414575}
+  - key: {fileID: 2609162972080855002, guid: 1b4626c4b5c304f048a15f1139445a86, type: 2}
+    value: {fileID: 461633185}
   m_ExposedReferences:
     m_References:
     - 5afe2ac6e85a641f38f70fdda0cf3b48: {fileID: 1106724715}
+    - d0ccbb89f3f7b4b49a2d2e9d17495959: {fileID: 461633185}
     - a75b59a57c54c49ee852f60e1d137bd0: {fileID: 1434617433}
 --- !u!114 &1422236927
 MonoBehaviour:
@@ -3659,6 +3706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1713946012}
+  DebugMode: 1
   KeyObj: {fileID: 0}
   PlungerObj: {fileID: 0}
   ToiletPaperObj: {fileID: 0}

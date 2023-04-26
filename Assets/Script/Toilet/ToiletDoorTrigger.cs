@@ -7,6 +7,7 @@ public class ToiletDoorTrigger : MonoBehaviour
     // Start is called before the first frame update
     public Animator animator;
 
+    public bool DebugMode;
     public InventoryItem_Key KeyObj;
     public InventoryItem_Plunger PlungerObj;
     public InventoryItem_ToiletPaper ToiletPaperObj;
@@ -37,7 +38,7 @@ public class ToiletDoorTrigger : MonoBehaviour
         Debug.Log("toiletPaper: " + toiletPaper);
         Debug.Log("soap: " + soap);
 
-        if (key && plunger && toiletPaper && soap && close)
+        if (DebugMode || (key && plunger && toiletPaper && soap && close))
         {
 
             animator.Play("ToiletDoor_Open");
