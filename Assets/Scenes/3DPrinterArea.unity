@@ -379,7 +379,6 @@ GameObject:
   - component: {fileID: 432545847}
   - component: {fileID: 432545850}
   - component: {fileID: 432545849}
-  - component: {fileID: 432545848}
   - component: {fileID: 432545852}
   - component: {fileID: 432545851}
   m_Layer: 0
@@ -404,32 +403,6 @@ Transform:
   m_Father: {fileID: 973377213}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &432545848
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432545846}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.31, y: 2.08}
-    newSize: {x: 1.31, y: 2.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.31, y: 2.08}
-  m_EdgeRadius: 0
 --- !u!61 &432545849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1069,7 +1042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867017650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8, y: -1.56, z: 0}
+  m_LocalPosition: {x: -3.8, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1275,8 +1248,9 @@ MonoBehaviour:
     - <color=#008B8B><i>"Stating the obvious, I see!"</i></color>
     - "\u2026Wait"
     - '"Why is there toilet paper roll under you?"'
-    - "<color=#008B8B><i>\"This toilet paper is my baby!\nYou\u2019ll never have
-      it as long as my I am alive and functioning\" </i></color>"
+    - "<color=#008B8B><i>\"This <color=\"green><b> TOILET PAPER</b></color> is my
+      baby!\nYou\u2019ll never have it as long as my I am alive and functioning\"
+      </i></color>"
     - "Ok\u2026 this is weird\u2026"
   dialogueWithWeapon:
     name: 
@@ -1285,7 +1259,8 @@ MonoBehaviour:
     - "\u201CA\u2026 knife?\""
     - '"To be honest I am not sure either. I just got it from the 3D printer."'
     - "<color=#008B8B><i>\u201CA weapon? How could this happen?\" \nThose 3D printers
-      want me dead!\nAlright you have won, here\u2019s the toilet paper\"</i></color>"
+      want me dead!\nAlright you have won, here\u2019s the  <color=\"green><b>TOILET 
+      PAPER</b></color>\"</i></color>"
     - "\u201COk? Thanks?\""
     - Am I losing my sanity?
   dialogueDefeated:
@@ -1433,7 +1408,6 @@ GameObject:
   - component: {fileID: 1024823842}
   - component: {fileID: 1024823845}
   - component: {fileID: 1024823844}
-  - component: {fileID: 1024823843}
   - component: {fileID: 1024823846}
   - component: {fileID: 1024823848}
   - component: {fileID: 1024823847}
@@ -1459,32 +1433,6 @@ Transform:
   m_Father: {fileID: 973377213}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1024823843
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024823841}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 1.52}
-    newSize: {x: 2.06, y: 1.52}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.71}
-  m_EdgeRadius: 0
 --- !u!61 &1024823844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2367,7 +2315,6 @@ GameObject:
   - component: {fileID: 1693476179}
   - component: {fileID: 1693476182}
   - component: {fileID: 1693476181}
-  - component: {fileID: 1693476180}
   - component: {fileID: 1693476183}
   - component: {fileID: 1693476185}
   - component: {fileID: 1693476184}
@@ -2393,32 +2340,6 @@ Transform:
   m_Father: {fileID: 973377213}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1693476180
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693476178}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 1.52}
-    newSize: {x: 2.06, y: 1.52}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.71}
-  m_EdgeRadius: 0
 --- !u!61 &1693476181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2589,7 +2510,6 @@ GameObject:
   - component: {fileID: 1761284162}
   - component: {fileID: 1761284165}
   - component: {fileID: 1761284164}
-  - component: {fileID: 1761284163}
   - component: {fileID: 1761284166}
   - component: {fileID: 1761284168}
   - component: {fileID: 1761284167}
@@ -2615,32 +2535,6 @@ Transform:
   m_Father: {fileID: 973377213}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1761284163
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761284161}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 1.52}
-    newSize: {x: 2.06, y: 1.52}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.06, y: 1.71}
-  m_EdgeRadius: 0
 --- !u!61 &1761284164
 BoxCollider2D:
   m_ObjectHideFlags: 0

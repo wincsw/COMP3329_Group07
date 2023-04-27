@@ -5,7 +5,7 @@ using UnityEngine;
 public class ToiletDoorTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Animator animator;
+    public GameObject toiletDoor;
 
     public bool DebugMode;
     public InventoryItem_Key KeyObj;
@@ -41,7 +41,7 @@ public class ToiletDoorTrigger : MonoBehaviour
         if (DebugMode || (key && plunger && toiletPaper && soap && close))
         {
 
-            animator.Play("ToiletDoor_Open");
+            toiletDoor.GetComponent<Animator>().Play("ToiletDoor_Open");
             close = false;
             boxCollider.size = new Vector2(0.24f, 1f);
             boxCollider.offset = new Vector2(-0.04f, 0.5f);
@@ -54,14 +54,15 @@ public class ToiletDoorTrigger : MonoBehaviour
 
     public void CloseToiletDoor()
     {
-        if (!close)
-        {
-            animator.Play("ToiletDoor_Close");
-            close = true;
-            boxCollider.size = new Vector2(0.8f, 0.8f);
-            boxCollider.offset = new Vector2(-0.4f, -0.24f);
-            return;
-        }
+        boxCollider.size = new Vector2(0.8f, 0.8f);
+        boxCollider.offset = new Vector2(-0.4f, -0.24f);
+        toiletDoor.GetComponent<Animator>().Play("ToiletDoor_Close");
+        toiletDoor.GetComponent<Interactable>().enabled = false;
+        close = true;
+
+        
+        return;
+        
 
     }
 }

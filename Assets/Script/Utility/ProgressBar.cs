@@ -8,7 +8,7 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider slider;
 
-    public const float MINUTES = 3.5f;
+    public const float MINUTES = 7f;
     public const float SPEED = 1f / (MINUTES * 60);
 
     public static float fillSpeed = SPEED;
@@ -45,6 +45,7 @@ public class ProgressBar : MonoBehaviour
         }
         if (slider.value == 1)
         {
+            ResetValue();
             FindObjectOfType<GameManager>().EndPeed();
         }
     }
