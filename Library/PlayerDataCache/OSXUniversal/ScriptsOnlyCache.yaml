@@ -85,6 +85,7 @@ ScriptsOnlyBuild:
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
     - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
@@ -1397,6 +1398,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
+      Script: {instanceID: 1762}
+    - Class: 114
       Script: {instanceID: 2302}
     - Class: 114
       Script: {instanceID: 2814}
@@ -1410,6 +1413,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4530}
     - Class: 114
       Script: {instanceID: 4576}
+    - Class: 114
+      Script: {instanceID: 4768}
     - Class: 114
       Script: {instanceID: 4886}
     - Class: 114
@@ -2883,7 +2888,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f84aad966dde2f29a76c9a255d78d5b6
+      Hash: 42f54ac43a1427e1b34eb3eaa94aa128
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ToiletDoorTrigger

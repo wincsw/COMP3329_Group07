@@ -3432,6 +3432,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1836819232, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3223316691483739469, guid: 994d8f2136ac3ca469d9da5b051975ae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4655,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedOverlay
       objectReference: {fileID: 0}
+    - target: {fileID: 4102004014770529705, guid: fc587fce12f0e44bda73027cd0bc0ce2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4102004014770529711, guid: fc587fce12f0e44bda73027cd0bc0ce2, type: 3}
       propertyPath: alarmDoNotDestroy
       value: 
@@ -4747,6 +4755,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 371390335}
+    - target: {fileID: 4102004014770529714, guid: fc587fce12f0e44bda73027cd0bc0ce2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc587fce12f0e44bda73027cd0bc0ce2, type: 3}
 --- !u!1001 &6066265768254958479

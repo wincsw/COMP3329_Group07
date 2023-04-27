@@ -87,11 +87,7 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Debug.Log("Restart");
-        GameObject[] musicObjs = GameObject.FindGameObjectsWithTag("GameMusic");
-        foreach (GameObject musicObj in musicObjs)
-        {
-            Destroy(musicObj);
-        }
+        DestroyMusic();
         InventoryItem_Soap.collected = false;
         InventoryItem_ToiletPaper.collected = false;
         InventoryItem_Key.collected = false;
