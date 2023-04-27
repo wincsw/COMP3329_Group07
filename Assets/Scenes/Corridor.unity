@@ -529,11 +529,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Here is a Student Card.
+      value: '"<i>Ione Win Chim</i>"'
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840806, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: Let's pick it up just in case I need it.
+      value: 'Is this my student card...?
+
+        I can''t believe Suki just dropped
+        it anywhere!'
       objectReference: {fileID: 0}
     - target: {fileID: 7497947654388840807, guid: 35fee90eda0ec458aa8e38ff7cdf647d, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
