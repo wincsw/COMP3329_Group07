@@ -2,7 +2,7 @@
 COMP3329 Group07
 
 ## Game Description
-One night, you wakes up and finds yourself alone in the Dream Chamber of Innowing. Your friend has taken away your student card, without it you cannot leave InnoWing. But that’s the least of your worries, as your bladder is getting full and  need to go to the toilet fast. You need to explore different rooms in Innowing, solve puzzles, get different items, go to the toilet, and eventually escape Innowing.
+You, Ione Win Chim, wakes up and finds yourself alone in the Dream Chamber of Innowing. Your friend has taken away your student card, without it you cannot leave InnoWing. But that’s the least of your worries, as your bladder is getting full and  need to go to the toilet fast. You need to explore different rooms in Innowing, solve puzzles, get different items, go to the toilet, and eventually escape Innowing.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ One night, you wakes up and finds yourself alone in the Dream Chamber of Innowin
 
 ### Game Goals
 - Collect all the item needed, go to the toilet, and escape Innowing!!
-- Achieve all the different endings.
+- Achieve all the different endings, including the win ending and other endings.
 
 ### Controls
 This game only uses keyboard for control
@@ -33,13 +33,27 @@ This game only uses keyboard for control
 
 ### Gameplay
 - You need to go to the toilet before the Peedometer fills up
-- 5 item are needed to be collected 
+  ![.github/images/Peedometer.png](.github/images/Peedometer.png)
 
-## Features
+- 5 item are needed to be collected. Toilet paper, soap, plunger, and key are needed to access the toilet, and the student card is needed to exit Innowing.
+  ![.github/images/Inventory.png](.github/images/Inventory.png)
 
-## Technologies Used
+
+<!--- ## Features --->
+
+<!--- ## Technologies Used --->
 
 ## Contributing
+- Graphics/Animation: Isabella, Raphaele
+- Development: Avery, Win
+- Script Writing: Avery, Isabella, Raphaele, Win
+- Creative Director: Avery
+
+## Collaboration
+- [Tam Wing Fan Innovation Wing, Faculty of Engineering, The University of Hong Kong](https://innowings.engg.hku.hk/)
+- COMP3329 Computer Game Design and Programming Course
 
 ## Credits
+- *Piskel* & *Medibang Paint Pro* as the main digital art software
+- *Fesliyan Studios* & *Pixabay* to source sound effects and music, specifically “Witness Testimony" by *David Robson* and "8 Bit Menu" by *David Renda* for the game’s background music.
 
