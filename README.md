@@ -16,7 +16,7 @@ You, Ione Win Chim, wakes up and finds yourself alone in the Dream Chamber of In
 
 1. Clone or download this repo.
 2. Open the corrisponding folder in Unity hub and open the project with the Unity version downloaded according to the prereqeistes.
-3. Select File --> Build Setting --> Build, and choose the loaction for the game.
+3. Select File -> Build Setting -> Build, and choose the loaction for the game.
 4. Open the game with the name "Escapee" and a toilet paper icon.
 
 ## How to Play
