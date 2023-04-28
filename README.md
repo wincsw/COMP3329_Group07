@@ -1,5 +1,4 @@
 # Escapee
-COMP3329 Group07
 
 ## Game Description
 You, Ione Win Chim, wakes up and finds yourself alone in the Dream Chamber of Innowing. Your friend has taken away your student card, without it you cannot leave InnoWing. But that’s the least of your worries, as your bladder is getting full and  need to go to the toilet fast. You need to explore different rooms in Innowing, solve puzzles, get different items, go to the toilet, and eventually escape Innowing.
