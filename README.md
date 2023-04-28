@@ -1,7 +1,7 @@
 # Escapee
 
 ## Game Description
-You, Ione Win Chim, wakes up and finds yourself alone in the Dream Chamber of Innowing. Your friend has taken away your student card, without it you cannot leave InnoWing. But that’s the least of your worries, as your bladder is getting full and  need to go to the toilet fast. You need to explore different rooms in Innowing, solve puzzles, get different items, go to the toilet, and eventually escape Innowing.
+You, Ione Win Chim, wake up and finds yourself alone in the Dream Chamber of Innowing. Your friend has taken away your student card, without it you cannot leave InnoWing. But that’s the least of your worries, as your bladder is getting full and you must to go to the toilet quick! You need to explore different rooms in Innowing, solve puzzles, get different items, go to the toilet, and eventually escape Innowing.
 
 ## Getting Started
 
@@ -21,12 +21,12 @@ You, Ione Win Chim, wakes up and finds yourself alone in the Dream Chamber of In
 ## How to Play
 
 ### Game Goals
-- Collect all the item needed, go to the toilet, and escape Innowing!!
-- Achieve all the different endings, including the win ending and other endings.
+- Collect all the items needed, go to the toilet, and escape Innowing!!
+- Achieve all the different endings, including the win ending and various bad endings.
 
 ### Controls
 This game only uses keyboard for control
-- WASD or arrow key for character movement control
+- WASD or arrow keys for character movement control
 - Space key to interact with objects and enter/exit rooms
 - Esc key to pause game and toggle the game menu
 
@@ -35,7 +35,7 @@ This game only uses keyboard for control
 
   ![Peedometer Image](https://github.com/wincsw/COMP3329_Group07/blob/new-dialogue/Image/Peedometer.png)
 
-- 5 item are needed to be collected. Toilet paper, soap, plunger, and key are needed to access the toilet, and the student card is needed to exit Innowing.
+- You need to collect 5 items. Toilet paper, soap, plunger, and key are required to access the toilet. The student card is needed to exit Innowing.
 
   ![Inventory Image](https://github.com/wincsw/COMP3329_Group07/blob/new-dialogue/Image/Inventory.png)
 
