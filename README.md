@@ -33,10 +33,10 @@ This game only uses keyboard for control
 
 ### Gameplay
 - You need to go to the toilet before the Peedometer fills up
-  ![.github/Image/Peedometer.png](.github/Image/Peedometer.png)
+  ![Peedometer Image](https://github.com/wincsw/COMP3329_Group07/blob/new-dialogue/Image/Peedometer.png)
 
 - 5 item are needed to be collected. Toilet paper, soap, plunger, and key are needed to access the toilet, and the student card is needed to exit Innowing.
-  ![.github/Image/Inventory.png](.github/Image/Inventory.png)
+  ![Inventory Image](https://github.com/wincsw/COMP3329_Group07/blob/new-dialogue/Image/Inventory.png)
 
 
 <!--- ## Features --->
